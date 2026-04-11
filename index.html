@@ -134,24 +134,49 @@
         <h2 class="section-title small-title playfair">HOW IT WORKS</h2>
         <div class="accordion">
             <div class="acc-item">
-                <span>1. BOOK YOUR APPOINTMENT</span>
-                <i class="fa-solid fa-plus"></i>
+                <div class="acc-header">
+                    <span>1. BOOK YOUR APPOINTMENT</span>
+                    <i class="fa-solid fa-plus"></i>
+                </div>
+                <div class="acc-content">
+                    <p>Select your preferred IV hydration therapy and easily book your session online or over the phone through our secure scheduling portal.</p>
+                </div>
             </div>
             <div class="acc-item">
-                <span>2. ARRIVE AT OUR PEACEFUL CLINIC</span>
-                <i class="fa-solid fa-plus"></i>
+                <div class="acc-header">
+                    <span>2. ARRIVE AT OUR PEACEFUL CLINIC</span>
+                    <i class="fa-solid fa-plus"></i>
+                </div>
+                <div class="acc-content">
+                    <p>Step into our luxurious, calming environment where our professional staff will welcome you and ensure you are comfortable before your session begins.</p>
+                </div>
             </div>
             <div class="acc-item">
-                <span>3. GET YOUR TREATMENT</span>
-                <i class="fa-solid fa-plus"></i>
+                <div class="acc-header">
+                    <span>3. GET YOUR TREATMENT</span>
+                    <i class="fa-solid fa-plus"></i>
+                </div>
+                <div class="acc-content">
+                    <p>Relax in our premium seating while one of our highly trained registered nurses administers your specialized IV drip tailored to your wellness goals.</p>
+                </div>
             </div>
             <div class="acc-item">
-                <span>4. CHECK OUT</span>
-                <i class="fa-solid fa-plus"></i>
+                <div class="acc-header">
+                    <span>4. CHECK OUT</span>
+                    <i class="fa-solid fa-plus"></i>
+                </div>
+                <div class="acc-content">
+                    <p>Once you are fully replenished, our seamless checkout process will have you on your way feeling rejuvenated, hydrated, and completely energized.</p>
+                </div>
             </div>
             <div class="acc-item">
-                <span>5. SPREAD THE WORD!</span>
-                <i class="fa-solid fa-plus"></i>
+                <div class="acc-header">
+                    <span>5. SPREAD THE WORD!</span>
+                    <i class="fa-solid fa-plus"></i>
+                </div>
+                <div class="acc-content">
+                    <p>If you loved your Revive experience, don't forget to tell your friends, colleagues, and family so they can feel the revitalizing difference too!</p>
+                </div>
             </div>
         </div>
     </section>
@@ -203,5 +228,23 @@
         <p class="copyright">Copyright © 2024 Revive IV Hydration | All Rights Reserved.</p>
     </footer>
 
+    <script>
+        document.querySelectorAll('.acc-header').forEach(header => {
+            header.addEventListener('click', () => {
+                const item = header.parentElement;
+                const isActive = item.classList.contains('active');
+                
+                // Close all accordion items
+                document.querySelectorAll('.acc-item').forEach(el => {
+                    el.classList.remove('active');
+                });
+                
+                // If it wasn't active initially, open it
+                if (!isActive) {
+                    item.classList.add('active');
+                }
+            });
+        });
+    </script>
 </body>
 </html>
