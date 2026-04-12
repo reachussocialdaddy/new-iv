@@ -45,6 +45,39 @@
         <h2>WHERE WELLNESS MEETS LUXURY</h2>
     </section>
 
+    <!-- Parallax Curvy Water Drip -->
+    <div class="parallax-curvy-container" id="water-effect-container">
+        <svg class="curvy-water-svg" preserveAspectRatio="none" viewBox="0 0 100 100" id="drip-svg">
+            <defs>
+                <!-- Mask drawn via JS to reveal the trail dynamically -->
+                <mask id="water-mask">
+                    <path class="mask-path" id="mask-path" fill="none" stroke="white" stroke-linecap="round" vector-effect="non-scaling-stroke" d="M 5 0 C 15 20, 95 20, 95 35 C 95 50, 5 50, 5 65 C 5 80, 95 80, 95 95 C 95 98, 50 100, 50 100"></path>
+                </mask>
+            </defs>
+            <!-- Faint track background (always visible) -->
+            <path class="curvy-water-tube" id="water-tube-path" vector-effect="non-scaling-stroke" d="M 5 0 C 15 20, 95 20, 95 35 C 95 50, 5 50, 5 65 C 5 80, 95 80, 95 95 C 95 98, 50 100, 50 100"></path>
+            
+            <!-- Group hidden by mask until user scrolls -->
+            <g mask="url(#water-mask)">
+                <!-- Actual colored solid water trail -->
+                <path class="curvy-water-trail" vector-effect="non-scaling-stroke" d="M 5 0 C 15 20, 95 20, 95 35 C 95 50, 5 50, 5 65 C 5 80, 95 80, 95 95 C 95 98, 50 100, 50 100"></path>
+                <!-- Fast flowing high-opacity water dashes to simulate rushing water -->
+                <path class="curvy-water-flow" vector-effect="non-scaling-stroke" d="M 5 0 C 15 20, 95 20, 95 35 C 95 50, 5 50, 5 65 C 5 80, 95 80, 95 95 C 95 98, 50 100, 50 100"></path>
+            </g>
+        </svg>
+        <div class="water-drop-wrapper" id="water-droplet">
+            <div class="water-droplet-3d"></div>
+            <!-- Bubbles inside the core droplet -->
+            <div class="drop-bubbles-container">
+                <div class="bubble b1"></div>
+                <div class="bubble b2"></div>
+                <div class="bubble b3"></div>
+                <div class="bubble b4"></div>
+            </div>
+            <div class="droplet-glow"></div>
+        </div>
+    </div>
+
     <!-- Why IV Hydration -->
     <section class="why-iv section-padding bg-white">
         <h2 class="section-title">WHY IV<br>HYDRATION?</h2>
@@ -55,22 +88,46 @@
         <!-- IV Bags Display -->
         <div class="iv-bags">
             <div class="iv-bag-item">
-                <img src="https://res.cloudinary.com/dpcidympa/image/upload/q_auto/f_auto/v1775948552/ivvv-2-removebg-preview_y6jzjn.png" alt="IV Bag 1">
+                <img src="https://res.cloudinary.com/dpcidympa/image/upload/q_auto/f_auto/v1775948552/ivvv-2-removebg-preview_y6jzjn.png" alt="Brain Focus">
+                <div class="bag-pricing">
+                    <h4 class="bag-name">BRAIN FOCUS</h4>
+                    <span class="bag-price">$400</span>
+                </div>
             </div>
             <div class="iv-bag-item">
-                <img src="https://res.cloudinary.com/dpcidympa/image/upload/q_auto/f_auto/v1775948552/ivvv-4-removebg-preview_w67nzx.png" alt="IV Bag 2">
+                <img src="https://res.cloudinary.com/dpcidympa/image/upload/q_auto/f_auto/v1775948552/ivvv-4-removebg-preview_w67nzx.png" alt="Revive Calm">
+                <div class="bag-pricing">
+                    <h4 class="bag-name">REVIVE CALM</h4>
+                    <span class="bag-price">$279</span>
+                </div>
             </div>
             <div class="iv-bag-item">
-                <img src="https://res.cloudinary.com/dpcidympa/image/upload/q_auto/f_auto/v1775948553/ivvv-3-removebg-preview_umoxbk.png" alt="IV Bag 3">
+                <img src="https://res.cloudinary.com/dpcidympa/image/upload/q_auto/f_auto/v1775948553/ivvv-3-removebg-preview_umoxbk.png" alt="Revive Defense">
+                <div class="bag-pricing">
+                    <h4 class="bag-name">REVIVE DEFENSE</h4>
+                    <span class="bag-price">$299</span>
+                </div>
             </div>
             <div class="iv-bag-item">
-                <img src="https://res.cloudinary.com/dpcidympa/image/upload/q_auto/f_auto/v1775948552/ivvv-5-removebg-preview_fbzea1.png" alt="IV Bag 4">
+                <img src="https://res.cloudinary.com/dpcidympa/image/upload/q_auto/f_auto/v1775948552/ivvv-5-removebg-preview_fbzea1.png" alt="Beautify">
+                <div class="bag-pricing">
+                    <h4 class="bag-name">BEAUTIFY</h4>
+                    <span class="bag-price">$299</span>
+                </div>
             </div>
             <div class="iv-bag-item">
-                <img src="https://res.cloudinary.com/dpcidympa/image/upload/q_auto/f_auto/v1775948553/ivvv-1-removebg-preview_haxd9b.png" alt="IV Bag 5">
+                <img src="https://res.cloudinary.com/dpcidympa/image/upload/q_auto/f_auto/v1775948553/ivvv-1-removebg-preview_haxd9b.png" alt="Liquid Gold">
+                <div class="bag-pricing">
+                    <h4 class="bag-name">LIQUID GOLD</h4>
+                    <span class="bag-price">$259</span>
+                </div>
             </div>
             <div class="iv-bag-item">
-                <img src="https://res.cloudinary.com/dpcidympa/image/upload/q_auto/f_auto/v1775948553/ivvv-6-removebg-preview_m1jap5.png" alt="IV Bag 6">
+                <img src="https://res.cloudinary.com/dpcidympa/image/upload/q_auto/f_auto/v1775948553/ivvv-6-removebg-preview_m1jap5.png" alt="Revive Recovery">
+                <div class="bag-pricing">
+                    <h4 class="bag-name">REVIVE RECOVERY</h4>
+                    <span class="bag-price">$279</span>
+                </div>
             </div>
         </div>
 
@@ -370,9 +427,60 @@
         // Initialize AOS
         AOS.init({
             duration: 1000,
-            once: true, /* whether animation should happen only once - while scrolling down */
-            offset: 100, /* offset (in px) from the original trigger point */
+            once: true,
+            offset: 100,
         });
+
+        // Parallax 3D Curvy Water Drip Logic
+        window.addEventListener('scroll', () => {
+            const container = document.getElementById('water-effect-container');
+            const droplet = document.getElementById('water-droplet');
+            const maskLine = document.getElementById('mask-path');
+            const path = document.getElementById('water-tube-path');
+            
+            const banner = document.querySelector('.banner-gold');
+            if(banner) {
+                container.style.top = (banner.offsetTop + banner.offsetHeight) + 'px';
+            }
+
+            const containerTop = parseInt(container.style.top || 0);
+            
+            // Set dynamic height from banner to footer
+            const footer = document.querySelector('.footer');
+            const contentHeight = document.body.scrollHeight - containerTop - (footer ? footer.offsetHeight : 0);
+            container.style.height = contentHeight + 'px';
+            
+            const scrollY = window.scrollY;
+
+            if (scrollY + window.innerHeight > containerTop) {
+                container.classList.add('visible');
+                
+                // Use the mask line to reveal the underlying water stream
+                const pathLength = path.getTotalLength();
+                maskLine.style.strokeDasharray = pathLength;
+                
+                let progressPixels = (scrollY - containerTop + window.innerHeight * 0.4);
+                let scrollPercentage = progressPixels / contentHeight;
+                scrollPercentage = Math.max(0, Math.min(scrollPercentage, 1));
+                
+                // Set offset matching scroll
+                const offset = pathLength - (scrollPercentage * pathLength);
+                maskLine.style.strokeDashoffset = offset;
+                
+                // Get exact coordinate on stroke curve for the 3D droplet position
+                const point = path.getPointAtLength(scrollPercentage * pathLength);
+                
+                // Convert viewBox 0-100 to exact px overlay values
+                const pxX = (point.x / 100) * window.innerWidth;
+                const pxY = (point.y / 100) * contentHeight;
+
+                droplet.style.transform = `translate(${pxX}px, ${pxY}px)`;
+            } else {
+                container.classList.remove('visible');
+            }
+        });
+        // Trigger initial calculation
+        setTimeout(() => window.dispatchEvent(new Event('scroll')), 500);
     </script>
 </body>
 </html>
