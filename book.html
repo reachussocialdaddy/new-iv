@@ -24,6 +24,9 @@
         <div class="logo">
             <a href="index.html"><img src="https://res.cloudinary.com/dpcidympa/image/upload/q_auto/f_auto/v1775173998/Screenshot_2026-04-03_051123-removebg-preview_wa0knu.png" alt="Revive IV Logo" class="logo-img"></a>
         </div>
+        <div class="hamburger">
+            <i class="fa-solid fa-bars"></i>
+        </div>
         <nav class="nav-links">
             <a href="index.html">HOME</a>
             <a href="iv-drips.html">IV DRIPS</a>
@@ -67,5 +70,24 @@
         </div>
         <p class="copyright">Copyright © 2024 Revive IV Hydration | All Rights Reserved.</p>
     </footer>
+    <script>
+        // Hamburger Menu Toggle
+        const hamburger = document.querySelector('.hamburger');
+        const navLinks = document.querySelector('.nav-links');
+        
+        if (hamburger) {
+            hamburger.addEventListener('click', () => {
+                navLinks.classList.toggle('active');
+                const icon = hamburger.querySelector('i');
+                if(navLinks.classList.contains('active')) {
+                    icon.classList.remove('fa-bars');
+                    icon.classList.add('fa-xmark');
+                } else {
+                    icon.classList.remove('fa-xmark');
+                    icon.classList.add('fa-bars');
+                }
+            });
+        }
+    </script>
 </body>
 </html>

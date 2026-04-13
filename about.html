@@ -24,6 +24,9 @@
         <div class="logo">
             <a href="index.html"><img src="https://res.cloudinary.com/dpcidympa/image/upload/q_auto/f_auto/v1775173998/Screenshot_2026-04-03_051123-removebg-preview_wa0knu.png" alt="Revive IV Logo" class="logo-img"></a>
         </div>
+        <div class="hamburger">
+            <i class="fa-solid fa-bars"></i>
+        </div>
         <nav class="nav-links">
             <a href="index.html">HOME</a>
             <a href="iv-drips.html">IV DRIPS</a>
@@ -50,6 +53,96 @@
             <p style="margin-top: 15px;">Safety and efficacy are our top priorities. Every drip and injection is administered by fully licensed, highly experienced registered nurses using only pharmacy-grade, FDA-approved ingredients to ensure your body receives exactly what it needs to thrive.</p>
         </div>
     </div>
+
+    <!-- Treatment Goals Section -->
+    <section class="treatment-goals section-padding bg-white">
+        <div class="container text-center" style="max-width: 1200px;">
+            <h2 class="section-title diff-title" style="margin-bottom: 15px; font-family: 'Inter', sans-serif; font-size: 2.1rem; color: #186082; font-weight: 600;">Find the Right Treatment for Your Wellness Goals</h2>
+            <p class="section-desc" style="max-width: 850px; margin: 0 auto; margin-bottom: 45px; font-family: 'Inter', sans-serif; color: #64748b; font-size: 0.95rem; line-height: 1.6;">Our physician-developed treatments are designed to target specific health concerns, promote overall wellness, and support long-term health—helping you look, feel, and perform at your best.</p>
+            
+            <div class="goals-grid">
+                <!-- Card 1 -->
+                <a href="book.html" class="goal-card">
+                    <div class="goal-icon"><i class="fa-solid fa-hand-holding-heart"></i></div>
+                    <div class="goal-title">Total<br>Wellness</div>
+                    <div class="goal-desc">Rejuvenate body and mind.</div>
+                    <div class="goal-arrow"><i class="fa-solid fa-circle-chevron-right"></i></div>
+                </a>
+
+                <!-- Card 2 -->
+                <a href="book.html" class="goal-card">
+                    <div class="goal-icon"><i class="fa-solid fa-hand-holding-medical"></i></div>
+                    <div class="goal-title">Cold & Flu<br>Recovery</div>
+                    <div class="goal-desc">Strengthen immunity and recover faster.</div>
+                    <div class="goal-arrow"><i class="fa-solid fa-circle-chevron-right"></i></div>
+                </a>
+
+                <!-- Card 3 -->
+                <a href="book.html" class="goal-card">
+                    <div class="goal-icon"><i class="fa-solid fa-weight-scale"></i></div>
+                    <div class="goal-title">Weight &<br>Metabolic Health</div>
+                    <div class="goal-desc">Boost fitness and shed pounds.</div>
+                    <div class="goal-arrow"><i class="fa-solid fa-circle-chevron-right"></i></div>
+                </a>
+
+                <!-- Card 4 -->
+                <a href="book.html" class="goal-card">
+                    <div class="goal-icon"><i class="fa-solid fa-brain"></i></div>
+                    <div class="goal-title">Cognitive Function<br>& Longevity</div>
+                    <div class="goal-desc">Enhance mental clarity and combat signs of aging.</div>
+                    <div class="goal-arrow"><i class="fa-solid fa-circle-chevron-right"></i></div>
+                </a>
+
+                <!-- Card 5 -->
+                <a href="book.html" class="goal-card">
+                    <div class="goal-icon"><i class="fa-solid fa-kit-medical"></i></div>
+                    <div class="goal-title">Pain &<br>Inflammation Relief</div>
+                    <div class="goal-desc">Relieve chronic or acute aches and pains.</div>
+                    <div class="goal-arrow"><i class="fa-solid fa-circle-chevron-right"></i></div>
+                </a>
+
+                <!-- Card 6 -->
+                <a href="book.html" class="goal-card">
+                    <div class="goal-icon"><i class="fa-solid fa-person-running"></i></div>
+                    <div class="goal-title">Athletic Performance &<br>Recovery</div>
+                    <div class="goal-desc">Rehydrate and enhance muscle recovery.</div>
+                    <div class="goal-arrow"><i class="fa-solid fa-circle-chevron-right"></i></div>
+                </a>
+
+                <!-- Card 7 -->
+                <a href="book.html" class="goal-card">
+                    <div class="goal-icon"><i class="fa-solid fa-leaf"></i></div>
+                    <div class="goal-title">Gut Health &<br>Digestion</div>
+                    <div class="goal-desc">Balance digestion and support a healthy gut microbiome.</div>
+                    <div class="goal-arrow"><i class="fa-solid fa-circle-chevron-right"></i></div>
+                </a>
+
+                <!-- Card 8 -->
+                <a href="book.html" class="goal-card">
+                    <div class="goal-icon"><i class="fa-solid fa-spa"></i></div>
+                    <div class="goal-title">Skin Health<br>& Anti-Aging</div>
+                    <div class="goal-desc">Hydrate, nourish, and restore a youthful glow.</div>
+                    <div class="goal-arrow"><i class="fa-solid fa-circle-chevron-right"></i></div>
+                </a>
+
+                <!-- Card 9 -->
+                <a href="book.html" class="goal-card">
+                    <div class="goal-icon"><i class="fa-solid fa-plane"></i></div>
+                    <div class="goal-title">Travel &<br>Celebration Reset</div>
+                    <div class="goal-desc">Bounce back from jet lag or a hangover.</div>
+                    <div class="goal-arrow"><i class="fa-solid fa-circle-chevron-right"></i></div>
+                </a>
+
+                <!-- Card 10 -->
+                <a href="book.html" class="goal-card">
+                    <div class="goal-icon"><i class="fa-solid fa-face-smile"></i></div>
+                    <div class="goal-title">Mood & Stress<br>Balance</div>
+                    <div class="goal-desc">Restore balance and feel refreshed.</div>
+                    <div class="goal-arrow"><i class="fa-solid fa-circle-chevron-right"></i></div>
+                </a>
+            </div>
+        </div>
+    </section>
     
     <footer class="footer">
         <div class="footer-logo">
@@ -58,5 +151,24 @@
         </div>
         <p class="copyright">Copyright © 2024 Revive IV Hydration | All Rights Reserved.</p>
     </footer>
+    <script>
+        // Hamburger Menu Toggle
+        const hamburger = document.querySelector('.hamburger');
+        const navLinks = document.querySelector('.nav-links');
+        
+        if (hamburger) {
+            hamburger.addEventListener('click', () => {
+                navLinks.classList.toggle('active');
+                const icon = hamburger.querySelector('i');
+                if(navLinks.classList.contains('active')) {
+                    icon.classList.remove('fa-bars');
+                    icon.classList.add('fa-xmark');
+                } else {
+                    icon.classList.remove('fa-xmark');
+                    icon.classList.add('fa-bars');
+                }
+            });
+        }
+    </script>
 </body>
 </html>
