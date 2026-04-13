@@ -1749,3 +1749,24 @@ a {
         text-align: left;
     }
 }
+
+/* Footer Bottom Bar */
+.footer-bottom-bar {
+    background-color: #000000;
+}
+.footer-bottom-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 15px 40px;
+    text-align: right;
+    color: #ffffff;
+    font-size: 0.85rem;
+    font-family: 'Inter', sans-serif;
+    letter-spacing: 0.5px;
+}
+@media (max-width: 768px) {
+    .footer-bottom-container {
+        text-align: center;
+        padding: 15px 20px;
+    }
+}
