@@ -1507,3 +1507,106 @@ a {
         height: 150px;
     }
 }
+
+/* Custom Hero Layout */
+.custom-hero {
+    justify-content: flex-start !important;
+    text-align: left !important;
+}
+.ch-layout {
+    max-width: 650px;
+    margin-left: 8%;
+    padding: 40px 20px;
+    color: var(--primary);
+}
+.ch-title {
+    font-size: 3.8rem;
+    font-weight: 700;
+    line-height: 1.15;
+    margin-bottom: 20px;
+    font-family: 'Montserrat', sans-serif;
+}
+.ch-desc {
+    font-size: 1.25rem;
+    font-weight: 500;
+    line-height: 1.6;
+    margin-bottom: 35px;
+    font-family: 'Inter', sans-serif;
+    color: var(--primary-light);
+}
+.ch-btn-group {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 25px;
+    flex-wrap: wrap;
+}
+.ch-btn {
+    border-radius: 30px;
+    padding: 12px 25px;
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-decoration: none;
+    display: inline-block;
+}
+.ch-btn-outline {
+    background-color: transparent;
+    color: var(--primary);
+    border: 2px solid var(--primary);
+}
+.ch-rating-group {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-family: 'Inter', sans-serif;
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: var(--primary);
+}
+.ch-stars {
+    color: var(--primary);
+    font-size: 1.1rem;
+    letter-spacing: 2px;
+}
+
+@media (max-width: 768px) {
+    .custom-hero {
+        height: 50vw !important;
+        min-height: unset !important;
+        background-size: cover;
+    }
+    .ch-layout {
+        max-width: 60vw; 
+        margin-left: 5vw;
+        padding: 4vw 0;
+    }
+    .ch-title {
+        font-size: 4.8vw;
+        margin-bottom: 2vw;
+    }
+    .ch-desc {
+        font-size: 1.8vw;
+        margin-bottom: 3vw;
+        line-height: 1.4;
+    }
+    .ch-btn-group {
+        gap: 1.5vw;
+        margin-bottom: 2.5vw;
+        flex-wrap: nowrap;
+    }
+    .ch-btn {
+        padding: 1vw 2.5vw;
+        font-size: 1.3vw;
+        border-radius: 4vw;
+        border-width: 1px;
+    }
+    .ch-rating-group {
+        gap: 1.5vw;
+        font-size: 1.4vw;
+    }
+    .ch-stars {
+        font-size: 1.6vw;
+        letter-spacing: 0;
+    }
+}
