@@ -1723,10 +1723,11 @@ a {
 }
 
 .new-footer .call-number {
-    font-size: 2rem;
+    font-size: 1.4rem;
     font-weight: 700;
     color: #ffffff;
     letter-spacing: 1px;
+    white-space: nowrap;
 }
 
 @media (max-width: 768px) {
