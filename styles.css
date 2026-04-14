@@ -90,6 +90,12 @@ a {
     color: var(--accent);
 }
 
+.nav-links a.active {
+    color: #d4af37; /* Distinct gold color for active item */
+    border-bottom: 2px solid #d4af37;
+    padding-bottom: 3px;
+}
+
 .btn-book {
     background-color: var(--primary);
     border: 1px solid var(--primary);
