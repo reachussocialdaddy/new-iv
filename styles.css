@@ -1909,3 +1909,50 @@ a {
     margin: 0 10px;
     color: #cca471;
 }
+
+/* Product Carousel */
+.product-carousel {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    gap: 20px;
+    padding-bottom: 20px;
+    margin-top: 30px;
+    scrollbar-width: thin;
+    scrollbar-color: var(--accent) var(--accent-light);
+    -webkit-overflow-scrolling: touch;
+}
+
+.product-carousel::-webkit-scrollbar {
+    height: 8px;
+}
+
+.product-carousel::-webkit-scrollbar-track {
+    background: var(--accent-light);
+    border-radius: 10px;
+}
+
+.product-carousel::-webkit-scrollbar-thumb {
+    background: var(--accent);
+    border-radius: 10px;
+}
+
+.product-carousel .product-card-single {
+    flex: 0 0 320px; /* Fixed width for each card so they don't shrink */
+    scroll-snap-align: start;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+}
+
+/* Hide scrollbar on mobile devices for cleaner look but still allow smooth scrolling */
+@media screen and (max-width: 768px) {
+    .product-carousel {
+        scrollbar-width: none;
+    }
+    .product-carousel::-webkit-scrollbar {
+        display: none;
+    }
+    .product-carousel .product-card-single {
+        flex: 0 0 280px; 
+    }
+}
+
