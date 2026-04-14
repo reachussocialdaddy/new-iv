@@ -20,7 +20,7 @@ new_footer_html = """    <!-- Footer -->
             </div>
             <div class="footer-contact">
                 <div class="social-icons">
-                    <a href="https://www.instagram.com/revivesanctuary?igsh=MzU3Y2sycTd3cnk0" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.instagram.com/reviveivdrip_/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
                     <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
                     <a href="#"><i class="fa-brands fa-tiktok"></i></a>
                 </div>
