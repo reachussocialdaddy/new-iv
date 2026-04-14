@@ -8,7 +8,7 @@ new_footer_html = """    <!-- Footer -->
                 <ul>
                     <li><a href="index.html">HOME</a><i class="fa-solid fa-chevron-right"></i></li>
                     <li><a href="iv-drips.html">IV DRIPS</a><i class="fa-solid fa-chevron-right"></i></li>
-                    <li><a href="iv-drips.html">DRIP SUCCESS FORMULA</a><i class="fa-solid fa-chevron-right"></i></li>
+
                     <li><a href="about.html">ABOUT</a><i class="fa-solid fa-chevron-right"></i></li>
                     <li><a href="faqs.html">FAQS</a><i class="fa-solid fa-chevron-right"></i></li>
                     <li><a href="index.html#reviews">REVIEWS</a><i class="fa-solid fa-chevron-right"></i></li>
