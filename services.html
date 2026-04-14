@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services | Revive IV Hydration</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,400;0,600;0,700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- AOS CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    
+    <style>
+        .services-hero {
+            background-color: #fcfaf5;
+            padding: 80px 20px 40px;
+            text-align: center;
+        }
+        .services-hero-logo {
+            max-width: 200px;
+            margin-bottom: 5px;
+        }
+        .services-subtitle {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.6rem;
+            color: #b08d57;
+            margin-bottom: 50px;
+            font-style: italic;
+        }
+        .services-title {
+            font-family: 'Inter', sans-serif;
+            font-size: 2.2rem;
+            color: #b08d57;
+            letter-spacing: 3px;
+            margin-bottom: 25px;
+            position: relative;
+            display: inline-block;
+            font-weight: 400;
+        }
+        .services-title::before, .services-title::after {
+            content: "";
+            position: absolute;
+            top: 50%;
+            width: 70px;
+            height: 1px;
+            background-color: #b08d57;
+        }
+        .services-title::before { left: -90px; }
+        .services-title::after { right: -90px; }
+        
+        .services-desc {
+            max-width: 800px;
+            margin: 0 auto;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 1.25rem;
+            line-height: 1.8;
+            color: #555;
+            margin-bottom: 70px;
+        }
+        
+        .services-split {
+            display: flex;
+            flex-wrap: wrap;
+            max-width: 1200px;
+            margin: 0 auto 60px;
+            gap: 50px;
+            align-items: center;
+        }
+        
+        .services-left, .services-right {
+            flex: 1;
+            min-width: 300px;
+        }
+        
+        .services-list-title {
+            font-family: 'Inter', sans-serif;
+            font-size: 1.4rem;
+            color: #b08d57;
+            letter-spacing: 3px;
+            margin-bottom: 35px;
+            display: flex;
+            align-items: center;
+            white-space: nowrap;
+            font-weight: 500;
+        }
+        
+        .services-list-title::before, .services-list-title::after {
+            content: "";
+            flex: 1;
+            height: 1px;
+            background-color: #b08d57;
+            margin: 0 20px;
+        }
+        
+        .services-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            text-align: left;
+        }
+        
+        .services-list li {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 1.25rem;
+            color: #444;
+            margin-bottom: 18px;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            font-weight: 400;
+        }
+        
+        .services-list li i {
+            color: #d4af37;
+            font-size: 1.1rem;
+        }
+        
+        .services-bags-img {
+            max-width: 100%;
+            border-radius: 12px;
+        }
+        
+        .services-bottom-row {
+            display: flex;
+            flex-wrap: wrap;
+            max-width: 1200px;
+            margin: 0 auto 60px;
+            gap: 60px;
+            padding: 20px;
+        }
+        
+        .services-perfect, .services-choose {
+            flex: 1;
+            min-width: 300px;
+        }
+        
+        .services-perfect ul {
+            list-style: none; /* replaced disc */
+            padding-left: 20px;
+            text-align: left;
+            font-family: 'Montserrat', sans-serif;
+            color: #555;
+            font-size: 1.25rem;
+        }
+        
+        .services-perfect ul li {
+            position: relative;
+            margin-bottom: 15px;
+            padding-left: 20px;
+        }
+        .services-perfect ul li::before {
+            content: "•";
+            color: #b08d57;
+            font-size: 1.5rem;
+            position: absolute;
+            left: -5px;
+            top: -5px;
+        }
+        
+        .services-choose ul {
+            list-style: none;
+            padding: 0;
+            text-align: left;
+        }
+        
+        .services-choose ul li {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 1.25rem;
+            color: #555;
+            margin-bottom: 18px;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+        
+        .services-choose ul li i {
+            color: #6c757d;  /* Changed to greyish color similar to image tick marks */
+            font-size: 1.2rem;
+            font-weight: 900;
+        }
+        
+        .services-footer-cta {
+            text-align: center;
+            margin: 80px auto 40px;
+            max-width: 800px;
+        }
+        
+        .services-footer-cta h3 {
+            font-family: 'Inter', sans-serif;
+            font-size: 1.6rem;
+            letter-spacing: 3px;
+            color: #b08d57;
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+            font-weight: 500;
+        }
+        
+        .services-footer-cta p {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 1.1rem;
+            color: #555;
+            letter-spacing: 1px;
+        }
+
+        @media (max-width: 768px) {
+            .services-title::before, .services-title::after,
+            .services-list-title::before, .services-list-title::after {
+                display: none;
+            }
+            .services-list-title {
+                justify-content: center;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Top Bar -->
+    <div class="top-bar" style="display: flex; justify-content: center; align-items: center; gap: 15px;">
+        <span style="font-size: 0.9rem;">Expert IV Hydration Delivered to You</span>
+        <a href="book.html" style="background-color: white; color: var(--accent); padding: 4px 15px; border-radius: 20px; font-weight: 700; font-size: 0.75rem;">BOOK NOW</a>
+    </div>
+
+    <!-- Header / Navbar -->
+    <header class="navbar">
+        <div class="logo">
+            <a href="index.html"><img src="https://res.cloudinary.com/dpcidympa/image/upload/q_auto/f_auto/v1775173998/Screenshot_2026-04-03_051123-removebg-preview_wa0knu.png" alt="Revive IV Logo" class="logo-img"></a>
+        </div>
+        <div class="hamburger">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+        <nav class="nav-links">
+            <a href="index.html">HOME</a>
+            <a href="services.html">SERVICES</a>
+            <a href="iv-drips.html">IV DRIPS</a>
+            <a href="iv-drips.html">DRIP SUCCESS FORMULA</a>
+            <a href="about.html">ABOUT</a>
+            <a href="faqs.html">FAQS</a>
+            <a href="index.html#reviews">REVIEWS</a>
+            <a href="contact.html">CONTACT</a>
+        </nav>
+    </header>
+
+    <div class="services-hero">
+        <img src="https://res.cloudinary.com/dpcidympa/image/upload/q_auto/f_auto/v1775173998/Screenshot_2026-04-03_051123-removebg-preview_wa0knu.png" alt="Revive IV Logo" class="services-hero-logo" data-aos="fade-down">
+        <div class="services-subtitle" data-aos="fade-up">Wellness Delivered</div>
+        
+        <h1 class="services-title" data-aos="zoom-in">GROUP IV THERAPY EXPERIENCE</h1>
+        <p class="services-desc" data-aos="fade-up" data-aos-delay="200">
+            Elevate your wellness with a private group IV hydration session — perfect for birthdays, bridal parties, corporate wellness, or a self-care day with friends.
+        </p>
+        
+        <div class="services-split">
+            <div class="services-left" data-aos="fade-right">
+                <h2 class="services-list-title">WHAT WE OFFER</h2>
+                <ul class="services-list">
+                    <li><i class="fa-solid fa-droplet" style="color: #d4af37;"></i> Liquid Gold (Hangover Cure)</li>
+                    <li><i class="fa-solid fa-droplet" style="color: #d4af37;"></i> Revive Calm (Relax • Reset • Restore)</li>
+                    <li><i class="fa-solid fa-droplet" style="color: #d4af37;"></i> Brain Focus (NAD+ Boost)</li>
+                    <li><i class="fa-solid fa-droplet" style="color: #d4af37;"></i> All-In One Revive (Myers Cocktail)</li>
+                    <li><i class="fa-solid fa-droplet" style="color: #d4af37;"></i> Revive Defense (Immunity Drop)</li>
+                    <li><i class="fa-solid fa-droplet" style="color: #d4af37;"></i> Beautify (Glow & Skin Health)</li>
+                    <li><i class="fa-solid fa-droplet" style="color: #d4af37;"></i> Revive Recovery (Athletic Recovery)</li>
+                </ul>
+            </div>
+            <div class="services-right" data-aos="fade-left">
+                <!-- Using an image of IV Bags, picking a cohesive group session image or the similar one from index -->
+                <img src="https://res.cloudinary.com/dpcidympa/image/upload/v1776136920/group-session-iv_bgac4t.jpg" alt="Group Therapy Sessions" class="services-bags-img" style="box-shadow: 0 15px 40px rgba(0,0,0,0.15);">
+            </div>
+        </div>
+        
+        <div class="services-bottom-row" data-aos="fade-up">
+            <div class="services-perfect">
+                <h2 class="services-list-title">PERFECT FOR</h2>
+                <ul>
+                    <li>Birthdays & Celebrations</li>
+                    <li>Bachelorette Parties</li>
+                    <li>Corporate Wellness Events</li>
+                    <li>Girls' Night / Self-Care Days</li>
+                    <li>Post-Event Recovery</li>
+                </ul>
+            </div>
+            
+            <div class="services-choose">
+                <h2 class="services-list-title">WHY CHOOSE REVIVE IV?</h2>
+                <ul>
+                    <li><i class="fa-solid fa-check"></i> Licensed medical professionals</li>
+                    <li><i class="fa-solid fa-check"></i> Premium ingredients</li>
+                    <li><i class="fa-solid fa-check"></i> Mobile service — we come to you</li>
+                    <li><i class="fa-solid fa-check"></i> Fast hydration & recovery</li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="services-footer-cta" data-aos="zoom-in">
+            <h3><span style="height: 1px; width: 60px; background-color: #b08d57;"></span>BOOK YOUR GROUP SESSION<span style="height: 1px; width: 60px; background-color: #b08d57;"></span></h3>
+            <p>Minimum group size applies | Custom packages available</p>
+        </div>
+    </div>
+
+
+    <footer class="footer new-footer">
+        <div class="footer-container">
+            <div class="footer-links">
+                <ul>
+                    <li><a href="index.html">HOME</a><i class="fa-solid fa-chevron-right"></i></li>
+                    <li><a href="services.html">SERVICES</a><i class="fa-solid fa-chevron-right"></i></li>
+                    <li><a href="iv-drips.html">IV DRIPS</a><i class="fa-solid fa-chevron-right"></i></li>
+                    <li><a href="iv-drips.html">DRIP SUCCESS FORMULA</a><i class="fa-solid fa-chevron-right"></i></li>
+                    <li><a href="about.html">ABOUT</a><i class="fa-solid fa-chevron-right"></i></li>
+                    <li><a href="faqs.html">FAQS</a><i class="fa-solid fa-chevron-right"></i></li>
+                    <li><a href="index.html#reviews">REVIEWS</a><i class="fa-solid fa-chevron-right"></i></li>
+                    <li><a href="contact.html">CONTACT</a><i class="fa-solid fa-chevron-right"></i></li>
+                </ul>
+            </div>
+            <div class="footer-disclaimer-text">
+                <p>The services provided have not been evaluated by the Food and Drug Administration. These products are not intended to diagnose, treat, cure or prevent any disease. The material on this website is provided for informational purposes only and is not medical advice. Always consult your physician before beginning any treatment or therapy program. Any designations or references to therapies are for marketing purposes only and do not represent actual products.</p>
+            </div>
+            <div class="footer-contact">
+                <div class="social-icons">
+                    <a href="https://www.instagram.com/revivesanctuary?igsh=MzU3Y2sycTd3cnk0" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+                </div>
+                <div class="contact-info">
+                    <p class="call-text">Give us a call</p>
+                    <p class="call-number">+1 813-709-3698</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="footer-bottom-bar">
+        <div class="footer-bottom-container">
+            <p>&copy; 2026 Revive IV Hydration || Drip & CMD websites</p>
+        </div>
+    </div>
+
+    <!-- AOS Script for Animations -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({ duration: 1000, once: true, offset: 50 });
+        
+        // Hamburger Menu Toggle
+        const hamburger = document.querySelector('.hamburger');
+        const navLinks = document.querySelector('.nav-links');
+        
+        if (hamburger) {
+            hamburger.addEventListener('click', () => {
+                navLinks.classList.toggle('active');
+                const icon = hamburger.querySelector('i');
+                if(navLinks.classList.contains('active')) {
+                    icon.classList.remove('fa-bars');
+                    icon.classList.add('fa-xmark');
+                } else {
+                    icon.classList.remove('fa-xmark');
+                    icon.classList.add('fa-bars');
+                }
+            });
+        }
+    </script>
+</body>
+</html>
