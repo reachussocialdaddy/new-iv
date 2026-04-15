@@ -161,10 +161,41 @@
         <div class="container text-center" style="max-width: 1200px;">
             <h2 class="section-title diff-title" style="margin-bottom: 30px; font-family: 'Inter', sans-serif; font-size: 2.8rem; color: #186082; font-weight: 700; text-transform: uppercase;">Group Therapy Sessions</h2>
             <div style="padding: 20px; display: flex; justify-content: center; align-items: center;">
-                <img src="https://res.cloudinary.com/drbeq3h8m/image/upload/v1776194479/iv-bottol-6_rhtrym.jpg" alt="Group Therapy Sessions" style="width: 100%; max-width: 1000px; border-radius: 15px; box-shadow: 0 15px 40px rgba(0,0,0,0.15); object-fit: cover;">
+                <div class="group-therapy-img-wrapper" style="position: relative; width: 100%; max-width: 1000px; border-radius: 15px; overflow: hidden; box-shadow: 0 15px 40px rgba(0,0,0,0.15); cursor: pointer; transition: transform 0.3s ease;" onclick="openGroupTherapyModal()" onmouseover="this.style.transform='scale(1.02)'" onmouseout="this.style.transform='scale(1)'">
+                    <img src="https://res.cloudinary.com/drbeq3h8m/image/upload/v1776194479/iv-bottol-6_rhtrym.jpg" alt="Group Therapy Sessions" style="width: 100%; display: block; object-fit: cover;">
+                    <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.45); display: flex; justify-content: center; align-items: center;">
+                        <h3 style="color: #fff; font-family: 'Playfair Display', serif; font-size: clamp(2rem, 5vw, 4rem); font-style: italic; font-weight: 600; text-shadow: 2px 4px 10px rgba(0,0,0,0.6); letter-spacing: 2px; margin: 0; padding: 20px; text-align: center; line-height: 1.3;">Special Discount <br>for Group Therapy</h3>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
+
+    <!-- Group Therapy Modal -->
+    <div id="groupTherapyModal" class="modal" style="display: none; position: fixed; z-index: 9999; left: 0; top: 0; width: 100%; height: 100%; overflow: auto; background-color: rgba(0,0,0,0.7); backdrop-filter: blur(4px);">
+        <div class="modal-content" style="background-color: #fefefe; margin: 4% auto; padding: 0; border: none; width: 95%; max-width: 900px; border-radius: 16px; position: relative; box-shadow: 0 20px 50px rgba(0,0,0,0.3); overflow: hidden;">
+            <span class="close-modal" style="color: #666; position: absolute; right: 20px; top: 15px; font-size: 32px; font-weight: bold; cursor: pointer; z-index: 10; transition: color 0.3s;" onmouseover="this.style.color='#000'" onmouseout="this.style.color='#666'" onclick="closeGroupTherapyModal()">&times;</span>
+            <div style="padding: 40px 20px 20px 20px; background: #fff;">
+                <iframe width="100%" height="650" src="https://ehr.charmtracker.com/publicCal.sas?method=getCal&amp;digest=01389c02584758d12e92e9396b7eb77f180cec49f3ab362ab2267a8fddc4c6206ee57013c1a537e6aa69605fce4db66ad95fcbc3b76e32a2" style="border:none" frameborder="0"></iframe>
+            </div>
+        </div>
+    </div>
+    <script>
+        function openGroupTherapyModal() {
+            document.getElementById('groupTherapyModal').style.display = 'block';
+            document.body.style.overflow = 'hidden'; // prevent background scrolling
+        }
+        function closeGroupTherapyModal() {
+            document.getElementById('groupTherapyModal').style.display = 'none';
+            document.body.style.overflow = 'auto'; // restore background scrolling
+        }
+        window.addEventListener('click', function(event) {
+            var modal = document.getElementById('groupTherapyModal');
+            if (event.target == modal) {
+                closeGroupTherapyModal();
+            }
+        });
+    </script>
 
     <!-- Weight Loss Injections Section -->
     <section class="weight-loss-injections section-padding bg-white" data-aos="fade-up">
