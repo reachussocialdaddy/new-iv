@@ -35,7 +35,7 @@
             <a href="services.html">SERVICES</a>
             <a href="iv-drips.html">IV DRIPS</a>
             <a href="about.html">ABOUT</a>
-            <a href="faqs.html">FAQS</a>
+            <a href="index.html#faqs">FAQS</a>
             <a href="index.html#reviews">REVIEWS</a>
             <a href="contact.html">CONTACT</a>
         </nav>
@@ -488,53 +488,57 @@
         </div>
     </section>
 
-    <!-- How It Works -->
-    <section class="how-it-works section-padding bg-white">
-        <h2 class="section-title small-title playfair">HOW IT WORKS</h2>
-        <div class="accordion">
-            <div class="acc-item">
-                <div class="acc-header">
-                    <span>1. BOOK YOUR APPOINTMENT</span>
-                    <i class="fa-solid fa-plus"></i>
+    <!-- FAQS Section -->
+    <section id="faqs" class="faqs-section section-padding bg-white">
+        <div class="container text-center" style="max-width: 900px; margin: 0 auto;">
+            <h2 class="section-title diff-title" style="margin-bottom: 20px; font-family: 'Inter', sans-serif; font-size: 2.8rem; color: #186082; font-weight: 700; text-transform: uppercase;">FREQUENTLY ASKED QUESTIONS</h2>
+            <p class="section-desc">Got questions about IV hydration? We've got answers. If you can't find what you're looking for, feel free to contact us directly.</p>
+            
+            <div class="accordion" style="text-align: left; margin-top: 40px;">
+                <div class="acc-item">
+                    <div class="acc-header" onclick="toggleFAQ(this)">
+                        <span>What is IV Hydration Therapy?</span>
+                        <i class="fa-solid fa-plus"></i>
+                    </div>
+                    <div class="acc-content">
+                        <p>IV hydration therapy is a fast and effective way to deliver necessary vitamins, minerals, and hydration directly into your bloodstream, completely bypassing the digestive system for 100% absorption.</p>
+                    </div>
                 </div>
-                <div class="acc-content">
-                    <p>Select your preferred IV hydration therapy and easily book your session online or over the phone through our secure scheduling portal.</p>
+                <div class="acc-item">
+                    <div class="acc-header" onclick="toggleFAQ(this)">
+                        <span>Does it hurt?</span>
+                        <i class="fa-solid fa-plus"></i>
+                    </div>
+                    <div class="acc-content">
+                        <p>Most clients feel only a slight pinch during the insertion of the IV. Our highly trained registered nurses are skilled at making the process as quick, painless, and comfortable as possible.</p>
+                    </div>
                 </div>
-            </div>
-            <div class="acc-item">
-                <div class="acc-header">
-                    <span>2. ARRIVE AT OUR PEACEFUL CLINIC</span>
-                    <i class="fa-solid fa-plus"></i>
+                <div class="acc-item">
+                    <div class="acc-header" onclick="toggleFAQ(this)">
+                        <span>How long does a session take?</span>
+                        <i class="fa-solid fa-plus"></i>
+                    </div>
+                    <div class="acc-content">
+                        <p>A typical IV therapy session lasts between 45 to 60 minutes, depending on the specific drip and your body's individual absorption rate. During this time, you can relax, read, or catch up on emails.</p>
+                    </div>
                 </div>
-                <div class="acc-content">
-                    <p>Step into our luxurious, calming environment where our professional staff will welcome you and ensure you are comfortable before your session begins.</p>
+                <div class="acc-item">
+                    <div class="acc-header" onclick="toggleFAQ(this)">
+                        <span>Is this safe?</span>
+                        <i class="fa-solid fa-plus"></i>
+                    </div>
+                    <div class="acc-content">
+                        <p>Yes! All our treatments are administered by licensed medical professionals using sterile, single-use equipment and FDA-approved, pharmacy-grade ingredients.</p>
+                    </div>
                 </div>
-            </div>
-            <div class="acc-item">
-                <div class="acc-header">
-                    <span>3. GET YOUR TREATMENT</span>
-                    <i class="fa-solid fa-plus"></i>
-                </div>
-                <div class="acc-content">
-                    <p>Relax in our premium seating while one of our highly trained registered nurses administers your specialized IV drip tailored to your wellness goals.</p>
-                </div>
-            </div>
-            <div class="acc-item">
-                <div class="acc-header">
-                    <span>4. CHECK OUT</span>
-                    <i class="fa-solid fa-plus"></i>
-                </div>
-                <div class="acc-content">
-                    <p>Once you are fully replenished, our seamless checkout process will have you on your way feeling rejuvenated, hydrated, and completely energized.</p>
-                </div>
-            </div>
-            <div class="acc-item">
-                <div class="acc-header">
-                    <span>5. SPREAD THE WORD!</span>
-                    <i class="fa-solid fa-plus"></i>
-                </div>
-                <div class="acc-content">
-                    <p>If you loved your Revive experience, don't forget to tell your friends, colleagues, and family so they can feel the revitalizing difference too!</p>
+                <div class="acc-item">
+                    <div class="acc-header" onclick="toggleFAQ(this)">
+                        <span>How quickly will I feel the effects?</span>
+                        <i class="fa-solid fa-plus"></i>
+                    </div>
+                    <div class="acc-content">
+                        <p>Most clients report feeling a boost in energy and overall wellness immediately following their session, with the full benefits noticeable over the next 24 to 48 hours.</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -585,7 +589,7 @@
                     <li><a href="iv-drips.html">IV DRIPS</a><i class="fa-solid fa-chevron-right"></i></li>
 
                     <li><a href="about.html">ABOUT</a><i class="fa-solid fa-chevron-right"></i></li>
-                    <li><a href="faqs.html">FAQS</a><i class="fa-solid fa-chevron-right"></i></li>
+                    <li><a href="index.html#faqs">FAQS</a><i class="fa-solid fa-chevron-right"></i></li>
                     <li><a href="index.html#reviews">REVIEWS</a><i class="fa-solid fa-chevron-right"></i></li>
                     <li><a href="contact.html">CONTACT</a><i class="fa-solid fa-chevron-right"></i></li>
                 </ul>
@@ -762,6 +766,16 @@
                 carousel.scrollLeft = scrollLeft - walk;
             });
         });
+
+        // FAQ Toggle
+        function toggleFAQ(element) {
+            const item = element.parentElement;
+            if(item.classList.contains('active')) {
+                item.classList.remove('active');
+            } else {
+                item.classList.add('active');
+            }
+        }
     </script>
 </body>
 </html>

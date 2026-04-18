@@ -10,7 +10,7 @@ new_footer_html = """    <!-- Footer -->
                     <li><a href="iv-drips.html">IV DRIPS</a><i class="fa-solid fa-chevron-right"></i></li>
 
                     <li><a href="about.html">ABOUT</a><i class="fa-solid fa-chevron-right"></i></li>
-                    <li><a href="faqs.html">FAQS</a><i class="fa-solid fa-chevron-right"></i></li>
+                    <li><a href="index.html#faqs">FAQS</a><i class="fa-solid fa-chevron-right"></i></li>
                     <li><a href="index.html#reviews">REVIEWS</a><i class="fa-solid fa-chevron-right"></i></li>
                     <li><a href="contact.html">CONTACT</a><i class="fa-solid fa-chevron-right"></i></li>
                 </ul>
