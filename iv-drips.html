@@ -43,8 +43,16 @@
         <p class="section-desc">Rehydrate, replenish, and recover with our specialized IV therapies delivered directly to you.</p>
     </div>
 
+    <!-- Category Filter -->
+    <div class="filter-container container">
+        <button class="filter-btn active" data-filter="all">All Treatments</button>
+        <button class="filter-btn" data-filter="iv-drips">IV Drips</button>
+        <button class="filter-btn" data-filter="im-shots">IM Shots</button>
+        <button class="filter-btn" data-filter="weight-loss">Weight Loss</button>
+    </div>
+
     <!-- Featured Product Section -->
-    <section class="featured-product section-padding bg-white" data-aos="fade-up" style="padding-top: 0;">
+    <section class="featured-product section-padding bg-white" data-aos="fade-up" style="padding-top: 0;" data-category="iv-drips">
         <div class="product-container container">
             <div class="product-image" style="display: flex; justify-content: center; align-items: center;">
                 <img src="https://res.cloudinary.com/dpcidympa/image/upload/q_auto/f_auto/v1776114758/final-iv-image_zwnase.png" alt="All-Inclusive IV" style="max-width: 100%;">
@@ -63,7 +71,7 @@
         </div>
     </section>
 
-    <div class="container section-padding" style="text-align: center; padding-top: 20px;">
+    <div class="container section-padding" style="text-align: center; padding-top: 20px;" data-category="iv-drips">
         <div class="product-container grid-3 mt-4">
             <!-- Myers Cocktail Drip -->
             <div class="product-card-single">
@@ -152,7 +160,7 @@
     </div>
 
     <!-- IM Pricing Section -->
-    <div class="container section-padding" style="text-align: center; border-top: 1px solid rgba(0,0,0,0.05);">
+    <div class="container section-padding" style="text-align: center; border-top: 1px solid rgba(0,0,0,0.05);" data-category="im-shots">
         <h1 class="product-title" style="margin-top: 10px;">Revive IM Shots</h1>
         <p class="section-desc">Add to any IV drip • Quick 5-minute injections • Wellness made easy</p>
         
@@ -220,7 +228,7 @@
     </div>
     
     <!-- Weight Loss Injections Section -->
-    <div class="container section-padding" style="text-align: center; border-top: 1px solid rgba(0,0,0,0.05);">
+    <div class="container section-padding" style="text-align: center; border-top: 1px solid rgba(0,0,0,0.05);" data-category="weight-loss">
         <h1 class="product-title" style="margin-top: 10px;">Revive Weight Loss Injections</h1>
         <p class="section-desc">Customized for your body & goals • Dosing increases gradually • Personalized plans • Ongoing support</p>
         
@@ -287,6 +295,31 @@
             <p>&copy; 2026 Revive IV Hydration || Drip & CMD websites</p>
         </div>
     </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const filterBtns = document.querySelectorAll('.filter-btn');
+            const categories = document.querySelectorAll('[data-category]');
+
+            filterBtns.forEach(btn => {
+                btn.addEventListener('click', function() {
+                    // Remove active class from all buttons
+                    filterBtns.forEach(b => b.classList.remove('active'));
+                    // Add active class to clicked button
+                    this.classList.add('active');
+
+                    const filterValue = this.getAttribute('data-filter');
+
+                    categories.forEach(category => {
+                        if (filterValue === 'all' || category.getAttribute('data-category') === filterValue) {
+                            category.style.display = ''; // Show
+                        } else {
+                            category.style.display = 'none'; // Hide
+                        }
+                    });
+                });
+            });
+        });
+    </script>
 </body>
 </html>
 
