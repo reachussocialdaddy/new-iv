@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IV Therapy Pricing & Packages | Revive IV Hydration NYC</title>
+    <meta name="description" content="Clear and transparent pricing for IV hydration, weight loss shots, and IM injections in New York. Book your mobile wellness session today.">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,400;0,600;0,700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .pricing-hero {
+            background-color: #fcfaf5;
+            padding: 80px 20px;
+            text-align: center;
+        }
+        .pricing-container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 60px 20px;
+        }
+        .pricing-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+        .pricing-card {
+            background: white;
+            border-radius: 15px;
+            padding: 40px 30px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+            transition: transform 0.3s ease;
+            display: flex;
+            flex-direction: column;
+            border: 1px solid rgba(0,0,0,0.03);
+            text-align: center;
+        }
+        .pricing-card:hover {
+            transform: translateY(-5px);
+        }
+        .pricing-title {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.8rem;
+            color: #0B3D2E;
+            margin-bottom: 10px;
+        }
+        .pricing-value {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: var(--accent);
+            margin-bottom: 20px;
+        }
+        .pricing-value span {
+            font-size: 1rem;
+            font-weight: 400;
+            color: #64748b;
+        }
+        .pricing-features {
+            list-style: none;
+            padding: 0;
+            margin: 0 0 30px 0;
+            text-align: left;
+            flex-grow: 1;
+        }
+        .pricing-features li {
+            margin-bottom: 12px;
+            display: flex;
+            align-items: flex-start;
+            gap: 10px;
+            color: #475569;
+            font-size: 0.95rem;
+        }
+        .pricing-features i {
+            color: #10b981;
+            margin-top: 4px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Top Bar -->
+    <div class="top-bar" style="display: flex; justify-content: center; align-items: center; gap: 15px;">
+        <span style="font-size: 0.9rem;">Expert IV Hydration Delivered to You in New York & Surrounding Areas</span>
+        <a href="book.html" style="background-color: white; color: var(--accent); padding: 4px 15px; border-radius: 20px; font-weight: 700; font-size: 0.75rem;">BOOK NOW</a>
+    </div>
+
+    <!-- Header / Navbar -->
+    
+    <!-- Header -->
+    <header class="navbar">
+        <div class="logo">
+            <a href="index.html"><img src="assets/images/revive-iv-logo.png" alt="Revive IV Logo" class="logo-img"></a>
+        </div>
+        <div class="hamburger">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+        <nav class="nav-links">
+            <a href="index.html" class="">HOME</a>
+            <a href="services.html" class="">SERVICES</a>
+            <a href="iv-drips.html" class="">IV DRIPS</a>
+            <a href="pricing.html" class="active">PRICING</a>
+            <a href="faq.html" class="">FAQS</a>
+            <a href="index.html#reviews">REVIEWS</a>
+            <a href="contact.html" class="">CONTACT</a>
+        </nav>
+    </header>
+
+    <div class="pricing-hero">
+        <h1 class="product-title">Transparent Pricing</h1>
+        <p class="section-desc">Premium wellness treatments with no hidden fees.</p>
+        
+        <!-- Premium Trust Badges -->
+        <div class="container" data-category="iv-drips" style="max-width: 1100px; margin-top: 40px;">
+            <div class="trust-badges-container">
+                <div class="trust-badge-item">
+                    <div class="trust-icon-wrapper"><i class="fa-solid fa-user-nurse"></i></div>
+                    <div>
+                    <h4>Licensed RNs</h4>
+                    <p>Administered by experts</p>
+                    </div>
+                </div>
+                <div class="trust-badge-item">
+                    <div class="trust-icon-wrapper"><i class="fa-solid fa-prescription-bottle-medical"></i></div>
+                    <div>
+                    <h4>FDA-Approved</h4>
+                    <p>Premium pharmacy sourced</p>
+                    </div>
+                </div>
+                <div class="trust-badge-item">
+                    <div class="trust-icon-wrapper"><i class="fa-solid fa-stethoscope"></i></div>
+                    <div>
+                    <h4>Medical Director</h4>
+                    <p>Complete safety oversight</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="pricing-container">
+        <!-- IV Drips Section -->
+        <h2 class="section-title diff-title" style="text-align: center; margin-bottom: 40px;">IV HYDRATION DRIPS</h2>
+        <div class="pricing-grid">
+             <div class="pricing-card">
+                <h3 class="pricing-title">Myers Cocktail</h3>
+                <div class="pricing-value">$175<span>/session</span></div>
+                <ul class="pricing-features">
+                    <li><i class="fa-solid fa-check"></i> B-Complex Vitamins</li>
+                    <li><i class="fa-solid fa-check"></i> Vitamin B12 & C</li>
+                    <li><i class="fa-solid fa-check"></i> Magnesium & Calcium</li>
+                    <li><i class="fa-solid fa-check"></i> Antioxidant Boost</li>
+                </ul>
+                <a href="book.html" class="btn-dark">BOOK NOW</a>
+            </div>
+            <div class="pricing-card" style="border: 2px solid var(--accent);">
+                <div style="background: var(--primary); color: white; padding: 5px; font-size: 0.7rem; font-weight: 700; border-radius: 5px; margin-bottom: 10px; text-transform: uppercase;">Most Popular</div>
+                <h3 class="pricing-title">Custom Revive</h3>
+                <div class="pricing-value">$175<span>/session</span></div>
+                <ul class="pricing-features">
+                    <li><i class="fa-solid fa-check"></i> Fully customized blend</li>
+                    <li><i class="fa-solid fa-check"></i> Up to 5 premium additives</li>
+                    <li><i class="fa-solid fa-check"></i> Personalized medical consult</li>
+                </ul>
+                <a href="book.html" class="btn-dark">BOOK NOW</a>
+            </div>
+            <div class="pricing-card">
+                <h3 class="pricing-title">NAD+ Boost</h3>
+                <div class="pricing-value">$500<span>/session</span></div>
+                <ul class="pricing-features">
+                    <li><i class="fa-solid fa-check"></i> High-dose NAD+</li>
+                    <li><i class="fa-solid fa-check"></i> Cellular repair focus</li>
+                    <li><i class="fa-solid fa-check"></i> Cognitive enhancement</li>
+                </ul>
+                <a href="book.html" class="btn-dark">BOOK NOW</a>
+            </div>
+        </div>
+
+        <!-- Weight Loss Section -->
+        <h2 class="section-title diff-title" style="text-align: center; margin-top: 80px; margin-bottom: 40px;">WEIGHT LOSS PROTOCOLS</h2>
+        <div class="pricing-grid">
+             <div class="pricing-card">
+                <h3 class="pricing-title">Semaglutide</h3>
+                <div class="pricing-value">$199<span>/month</span></div>
+                <ul class="pricing-features">
+                    <li><i class="fa-solid fa-check"></i> Monthly injection supply</li>
+                    <li><i class="fa-solid fa-check"></i> Medical oversight</li>
+                    <li><i class="fa-solid fa-check"></i> Gradual dosage titration</li>
+                </ul>
+                <a href="https://square.link/u/XL0onhgR" class="btn-dark">START PLAN</a>
+            </div>
+            <div class="pricing-card">
+                <h3 class="pricing-title">Tirzepatide</h3>
+                <div class="pricing-value">$249<span>/month</span></div>
+                <ul class="pricing-features">
+                    <li><i class="fa-solid fa-check"></i> Dual-action GLP-1/GIP</li>
+                    <li><i class="fa-solid fa-check"></i> Enhanced metabolic focus</li>
+                    <li><i class="fa-solid fa-check"></i> Continuous monitoring</li>
+                </ul>
+                <a href="https://square.link/u/A0Op2rDF" class="btn-dark">START PLAN</a>
+            </div>
+        </div>
+
+        <!-- Shots Bar Section -->
+        <h2 class="section-title diff-title" style="text-align: center; margin-top: 80px; margin-bottom: 10px; font-family: 'Inter', sans-serif; font-size: 2.8rem; color: #0B3D2E; font-weight: 700; text-transform: uppercase;">The Shot Bar</h2>
+        <p class="section-desc" style="text-align: center; margin-bottom: 40px;">Rapid wellness boosts delivered in under 15 minutes. Add to any IV or book standalone.</p>
+        
+        <div class="shot-bar-grid">
+            <!-- Item 1 -->
+            <div class="premium-shot-card">
+                <img src="https://res.cloudinary.com/dpcidympa/image/upload/v1776218208/vitamin_b-12_nvw8th.png" alt="Vitamin B12" class="shot-product-image">
+                <h3>Vitamin B12</h3>
+                <div class="price">$35</div>
+                <p>Instant energy boost and metabolic support.</p>
+                <a href="https://square.link/u/zLDBSZqG" class="btn-outline-dark" style="width: 100%; display: block; border-radius: 30px;">Book Shot</a>
+            </div>
+
+            <!-- Item 2 -->
+            <div class="premium-shot-card">
+                <img src="https://res.cloudinary.com/dpcidympa/image/upload/v1776218208/vitamin-d_zsuzaw.png" alt="Vitamin D" class="shot-product-image">
+                <h3>Vitamin D</h3>
+                <div class="price">$45</div>
+                <p>Bone health, immunity, and mood regulation.</p>
+                <a href="https://square.link/u/RrPjPYUw" class="btn-outline-dark" style="width: 100%; display: block; border-radius: 30px;">Book Shot</a>
+            </div>
+
+            <!-- Item 3 -->
+            <div class="premium-shot-card">
+                <img src="https://res.cloudinary.com/dpcidympa/image/upload/v1776220403/Lipolean_tvb5va.png" alt="Lipolean" class="shot-product-image">
+                <h3>Lipolean</h3>
+                <div class="price">$40</div>
+                <p>Fat metabolism and weight loss optimization.</p>
+                <a href="https://square.link/u/CXxvDxs6" class="btn-outline-dark" style="width: 100%; display: block; border-radius: 30px;">Book Shot</a>
+            </div>
+
+            <!-- Item 4 -->
+            <div class="premium-shot-card">
+                <img src="https://res.cloudinary.com/dpcidympa/image/upload/v1776546088/biotin_vzauor-removebg-preview_ondabm.png" alt="Biotin" class="shot-product-image">
+                <h3>Biotin</h3>
+                <div class="price">$35</div>
+                <p>Healthy hair, glowing skin, and strong nails.</p>
+                <a href="https://square.link/u/ChuGL199" class="btn-outline-dark" style="width: 100%; display: block; border-radius: 30px;">Book Shot</a>
+            </div>
+
+            <!-- Item 5 -->
+            <div class="premium-shot-card">
+                <img src="https://res.cloudinary.com/dpcidympa/image/upload/v1776547649/gggggg_mjpxco.jpg" alt="Glutathione" class="shot-product-image">
+                <h3>Glutathione</h3>
+                <div class="price">$50</div>
+                <p>Powerful antioxidant for detoxification and skin health.</p>
+                <a href="https://square.link/u/sunXzfKj" class="btn-outline-dark" style="width: 100%; display: block; border-radius: 30px;">Book Shot</a>
+            </div>
+        </div>
+    </div>
+
+        <!-- Footer -->
+    <footer class="footer new-footer">
+        <div class="footer-container">
+            <div class="footer-links">
+                <ul>
+                    <li><a href="index.html">HOME</a><i class="fa-solid fa-chevron-right"></i></li>
+                    <li><a href="iv-drips.html">IV DRIPS</a><i class="fa-solid fa-chevron-right"></i></li>
+
+                    <li><a href="about.html">ABOUT</a><i class="fa-solid fa-chevron-right"></i></li>
+                    <li><a href="index.html#faqs">FAQS</a><i class="fa-solid fa-chevron-right"></i></li>
+                    <li><a href="index.html#reviews">REVIEWS</a><i class="fa-solid fa-chevron-right"></i></li>
+                    <li><a href="contact.html">CONTACT</a><i class="fa-solid fa-chevron-right"></i></li>
+                </ul>
+            </div>
+            <div class="footer-disclaimer-text">
+                <p>The services provided have not been evaluated by the Food and Drug Administration. These products are not intended to diagnose, treat, cure or prevent any disease. The material on this website is provided for informational purposes only and is not medical advice. Always consult your physician before beginning any treatment or therapy program. Any designations or references to therapies are for marketing purposes only and do not represent actual products.</p>
+            </div>
+            <div class="footer-contact">
+                <div class="social-icons">
+                    <a href="https://www.instagram.com/reviveivdrip_/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.facebook.com/profile.php?id=61570785538852" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="https://www.tiktok.com/@revive.iv.drip?_r=1&_t=ZS-95Y6xC3RF0z" target="_blank"><i class="fa-brands fa-tiktok"></i></a>
+                </div>
+                <div class="contact-info">
+                    <p class="call-text">Give us a call</p>
+                    <p class="call-number">+1 (646) 709-3698</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="footer-bottom-bar">
+        <div class="footer-bottom-container">
+            <p>&copy; 2024 - 2026 Revive IV Hydration</p>
+        </div>
+    </div>
+
+    <script>
+        // Hamburger Menu Toggle
+        const hamburger = document.querySelector('.hamburger');
+        const navLinks = document.querySelector('.nav-links');
+        if (hamburger) {
+            hamburger.addEventListener('click', () => {
+                navLinks.classList.toggle('active');
+                const icon = hamburger.querySelector('i');
+                if(navLinks.classList.contains('active')) {
+                    icon.classList.remove('fa-bars');
+                    icon.classList.add('fa-xmark');
+                } else {
+                    icon.classList.remove('fa-xmark');
+                    icon.classList.add('fa-bars');
+                }
+            });
+        }
+    </script>
+</body>
+</html>

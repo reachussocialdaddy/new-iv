@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frequently Asked Questions | IV Therapy Guide NY | Revive IV</title>
+    <meta name="description" content="Find answers to common questions about IV hydration, safety, ingredients, and our mobile service in New York. Expert medical oversight for your wellness.">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,400;0,600;0,700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .faq-hero {
+            background-color: #fcfaf5;
+            padding: 80px 20px;
+            text-align: center;
+        }
+        .faq-container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 60px 20px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Top Bar -->
+    <div class="top-bar" style="display: flex; justify-content: center; align-items: center; gap: 15px;">
+        <span style="font-size: 0.9rem;">Expert IV Hydration Delivered to You in New York & Surrounding Areas</span>
+        <a href="book.html" style="background-color: white; color: var(--accent); padding: 4px 15px; border-radius: 20px; font-weight: 700; font-size: 0.75rem;">BOOK NOW</a>
+    </div>
+
+    <!-- Header / Navbar -->
+    
+    <!-- Header -->
+    <header class="navbar">
+        <div class="logo">
+            <a href="index.html"><img src="assets/images/revive-iv-logo.png" alt="Revive IV Logo" class="logo-img"></a>
+        </div>
+        <div class="hamburger">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+        <nav class="nav-links">
+            <a href="index.html" class="">HOME</a>
+            <a href="services.html" class="">SERVICES</a>
+            <a href="iv-drips.html" class="">IV DRIPS</a>
+            <a href="pricing.html" class="">PRICING</a>
+            <a href="about.html" class="">ABOUT</a>
+            <a href="faq.html" class="active">FAQS</a>
+            <a href="index.html#reviews">REVIEWS</a>
+            <a href="contact.html" class="">CONTACT</a>
+        </nav>
+    </header>
+
+    <div class="faq-hero">
+        <h1 class="product-title">Frequently Asked Questions</h1>
+        <p class="section-desc">Everything you need to know about Revive IV Hydration.</p>
+    </div>
+
+    <div class="faq-container">
+        <div class="accordion" style="text-align: left;">
+            <div class="acc-item active">
+                <div class="acc-header" onclick="toggleFAQ(this)">
+                    <span>What is IV Hydration Therapy?</span>
+                    <i class="fa-solid fa-plus"></i>
+                </div>
+                <div class="acc-content">
+                    <p>IV hydration therapy is a fast and effective way to deliver necessary vitamins, minerals, and hydration directly into your bloodstream, completely bypassing the digestive system for 100% absorption.</p>
+                </div>
+            </div>
+            <div class="acc-item">
+                <div class="acc-header" onclick="toggleFAQ(this)">
+                    <span>Does it hurt?</span>
+                    <i class="fa-solid fa-plus"></i>
+                </div>
+                <div class="acc-content">
+                    <p>Most clients feel only a slight pinch during the insertion of the IV. Our highly trained registered nurses are skilled at making the process as quick, painless, and comfortable as possible.</p>
+                </div>
+            </div>
+            <div class="acc-item">
+                <div class="acc-header" onclick="toggleFAQ(this)">
+                    <span>How long does a session take?</span>
+                    <i class="fa-solid fa-plus"></i>
+                </div>
+                <div class="acc-content">
+                    <p>A typical IV therapy session lasts between 45 to 60 minutes, depending on the specific drip and your body's individual absorption rate. During this time, you can relax, read, or catch up on emails.</p>
+                </div>
+            </div>
+            <div class="acc-item">
+                <div class="acc-header" onclick="toggleFAQ(this)">
+                    <span>Is this safe?</span>
+                    <i class="fa-solid fa-plus"></i>
+                </div>
+                <div class="acc-content">
+                    <p>Yes! All our treatments are administered by licensed medical professionals using sterile, single-use equipment and FDA-approved, pharmacy-grade ingredients to ensure your body receives exactly what it needs to thrive.</p>
+                </div>
+            </div>
+            <div class="acc-item">
+                <div class="acc-header" onclick="toggleFAQ(this)">
+                    <span>How quickly will I feel the effects?</span>
+                    <i class="fa-solid fa-plus"></i>
+                </div>
+                <div class="acc-content">
+                    <p>Most clients report feeling a boost in energy and overall wellness immediately following their session, with the full benefits noticeable over the next 24 to 48 hours.</p>
+                </div>
+            </div>
+            <!-- Additional FAQs -->
+            <div class="acc-item">
+                <div class="acc-header" onclick="toggleFAQ(this)">
+                    <span>Where do you provide services?</span>
+                    <i class="fa-solid fa-plus"></i>
+                </div>
+                <div class="acc-content">
+                    <p>We provide mobile IV therapy throughout the New York Metro Area, including Manhattan, Brooklyn, Queens, and surrounding neighborhoods. We come to your home, office, or hotel.</p>
+                </div>
+            </div>
+            <div class="acc-item">
+                <div class="acc-header" onclick="toggleFAQ(this)">
+                    <span>Do you offer group discounts?</span>
+                    <i class="fa-solid fa-plus"></i>
+                </div>
+                <div class="acc-content">
+                    <p>Yes! We offer special pricing for groups of 3 or more. This is perfect for bridal parties, corporate events, or workout groups. Contact us for a custom quote.</p>
+                </div>
+            </div>
+        </div>
+
+        <div style="text-align: center; margin-top: 60px;">
+            <h3 style="font-family: 'Inter', sans-serif; color: #0B3D2E; margin-bottom: 20px;">Still have questions?</h3>
+            <a href="contact.html" class="btn-dark">CONTACT US DIRECTLY</a>
+        </div>
+    </div>
+
+                <!-- Footer -->
+    <footer class="footer new-footer">
+        <div class="footer-container">
+            <div class="footer-links">
+                <ul>
+                    <li><a href="index.html">HOME</a><i class="fa-solid fa-chevron-right"></i></li>
+                    <li><a href="iv-drips.html">IV DRIPS</a><i class="fa-solid fa-chevron-right"></i></li>
+
+                    <li><a href="about.html">ABOUT</a><i class="fa-solid fa-chevron-right"></i></li>
+                    <li><a href="index.html#faqs">FAQS</a><i class="fa-solid fa-chevron-right"></i></li>
+                    <li><a href="index.html#reviews">REVIEWS</a><i class="fa-solid fa-chevron-right"></i></li>
+                    <li><a href="contact.html">CONTACT</a><i class="fa-solid fa-chevron-right"></i></li>
+                </ul>
+            </div>
+            <div class="footer-disclaimer-text">
+                <p>The services provided have not been evaluated by the Food and Drug Administration. These products are not intended to diagnose, treat, cure or prevent any disease. The material on this website is provided for informational purposes only and is not medical advice. Always consult your physician before beginning any treatment or therapy program. Any designations or references to therapies are for marketing purposes only and do not represent actual products.</p>
+            </div>
+            <div class="footer-contact">
+                <div class="social-icons">
+                    <a href="https://www.instagram.com/reviveivdrip_/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.facebook.com/profile.php?id=61570785538852" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="https://www.tiktok.com/@revive.iv.drip?_r=1&_t=ZS-95Y6xC3RF0z" target="_blank"><i class="fa-brands fa-tiktok"></i></a>
+                </div>
+                <div class="contact-info">
+                    <p class="call-text">Give us a call</p>
+                    <p class="call-number">+1 (646) 709-3698</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="footer-bottom-bar">
+        <div class="footer-bottom-container">
+            <p>&copy; 2024 - 2026 Revive IV Hydration</p>
+        </div>
+    </div>
+
+    <script>
+        // FAQ Toggle
+        function toggleFAQ(element) {
+            const item = element.parentElement;
+            if(item.classList.contains('active')) {
+                item.classList.remove('active');
+            } else {
+                item.classList.add('active');
+            }
+        }
+        // Hamburger Menu Toggle
+        const hamburger = document.querySelector('.hamburger');
+        const navLinks = document.querySelector('.nav-links');
+        
+        if (hamburger) {
+            hamburger.addEventListener('click', () => {
+                navLinks.classList.toggle('active');
+                const icon = hamburger.querySelector('i');
+                if(navLinks.classList.contains('active')) {
+                    icon.classList.remove('fa-bars');
+                    icon.classList.add('fa-xmark');
+                } else {
+                    icon.classList.remove('fa-xmark');
+                    icon.classList.add('fa-bars');
+                }
+            });
+        }
+    </script>
+</body>
+</html>

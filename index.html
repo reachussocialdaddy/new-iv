@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Revive IV Hydration | Replenish & Recover</title>
+    <title>Revive IV Hydration | Expert Mobile IV Therapy in New York</title>
+    <meta name="description" content="Experience premium at-home IV hydration therapy in NYC. Professional nurses delivering wellness, recovery, and energy drips directly to your doorstep.">
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -18,12 +19,26 @@
 <body>
 
     <!-- Top Bar -->
-    <div class="top-bar" style="display: flex; justify-content: center; align-items: center; gap: 15px;">
-        <span style="font-size: 0.9rem;">Expert IV Hydration Delivered to You in New York & Surrounding Areas</span>
-        <a href="book.html" style="background-color: white; color: var(--accent); padding: 4px 15px; border-radius: 20px; font-weight: 700; font-size: 0.75rem;">BOOK NOW</a>
+    <div class="top-bar-wrapper" id="topBar">
+        <div class="top-bar" style="display: flex; justify-content: center; align-items: center; gap: 15px; position: relative; padding-right: 40px;">
+            <span style="font-size: 0.9rem;">Expert IV Hydration Delivered to You in New York & Surrounding Areas</span>
+            <a href="book.html" style="background-color: white; color: var(--accent); padding: 4px 15px; border-radius: 20px; font-weight: 700; font-size: 0.75rem;">BOOK NOW</a>
+            <button onclick="dismissTopBar()" style="position: absolute; right: 15px; background: none; border: none; color: white; cursor: pointer; font-size: 1.2rem; opacity: 0.8;">&times;</button>
+        </div>
     </div>
+    <script>
+        function dismissTopBar() {
+            document.getElementById('topBar').style.display = 'none';
+            localStorage.setItem('topBarDismissed', 'true');
+        }
+        if (localStorage.getItem('topBarDismissed')) {
+            document.getElementById('topBar').style.display = 'none';
+        }
+    </script>
 
     <!-- Header / Navbar -->
+    
+    <!-- Header -->
     <header class="navbar">
         <div class="logo">
             <a href="index.html"><img src="assets/images/revive-iv-logo.png" alt="Revive IV Logo" class="logo-img"></a>
@@ -33,12 +48,13 @@
         </div>
         <nav class="nav-links">
             <a href="index.html" class="active">HOME</a>
-            <a href="services.html">SERVICES</a>
-            <a href="iv-drips.html">IV DRIPS</a>
-            <a href="about.html">ABOUT</a>
-            <a href="index.html#faqs">FAQS</a>
+            <a href="services.html" class="">SERVICES</a>
+            <a href="iv-drips.html" class="">IV DRIPS</a>
+            <a href="pricing.html" class="">PRICING</a>
+            <a href="about.html" class="">ABOUT</a>
+            <a href="faq.html" class="">FAQS</a>
             <a href="index.html#reviews">REVIEWS</a>
-            <a href="contact.html">CONTACT</a>
+            <a href="contact.html" class="">CONTACT</a>
         </nav>
     </header>
 
@@ -70,29 +86,29 @@
     <!-- Treatment Goals Section -->
     <section class="treatment-goals section-padding bg-white" data-aos="fade-up">
         <div class="container text-center" style="max-width: 1200px;">
-            <h2 class="section-title diff-title" style="margin-bottom: 15px; font-family: 'Inter', sans-serif; font-size: 2.1rem; color: #186082; font-weight: 600;">Find the Right Treatment for Your Wellness Goals</h2>
+            <h2 class="section-title diff-title" style="margin-bottom: 15px; font-family: 'Inter', sans-serif; font-size: 2.1rem; color: #0B3D2E; font-weight: 600;">Find the Right Treatment for Your Wellness Goals</h2>
             <p class="section-desc" style="max-width: 850px; margin: 0 auto; margin-bottom: 45px; font-family: 'Inter', sans-serif; color: #64748b; font-size: 0.95rem; line-height: 1.6;">Our physician-developed treatments are designed to target specific health concerns, promote overall wellness, and support long-term health—helping you look, feel, and perform at your best.</p>
             
             <div class="services-grid" style="display: flex; flex-wrap: wrap; justify-content: center; gap: 50px; margin-top: 50px;">
                  <a href="book.html" class="service-icon" style="text-decoration: none; color: inherit; display: flex; flex-direction: column; align-items: center; gap: 15px;">
                     <div class="icon-circle" style="color: var(--primary);"><i class="fa-solid fa-mask-face" style="font-size: 4.5rem;"></i></div>
-                    <h3 style="font-family: 'Inter', sans-serif; font-size: 1.1rem; font-weight: 700; color: #186082; letter-spacing: 1px;">IMMUNITY</h3>
+                    <h3 style="font-family: 'Inter', sans-serif; font-size: 1.1rem; font-weight: 700; color: #0B3D2E; letter-spacing: 1px;">IMMUNITY</h3>
                 </a>
                 <a href="book.html" class="service-icon" style="text-decoration: none; color: inherit; display: flex; flex-direction: column; align-items: center; gap: 15px;">
                     <div class="icon-circle" style="color: var(--primary);"><i class="fa-solid fa-droplet" style="font-size: 4.5rem;"></i></div>
-                    <h3 style="font-family: 'Inter', sans-serif; font-size: 1.1rem; font-weight: 700; color: #186082; letter-spacing: 1px;">HYDRATION</h3>
+                    <h3 style="font-family: 'Inter', sans-serif; font-size: 1.1rem; font-weight: 700; color: #0B3D2E; letter-spacing: 1px;">HYDRATION</h3>
                 </a>
                 <a href="book.html" class="service-icon" style="text-decoration: none; color: inherit; display: flex; flex-direction: column; align-items: center; gap: 15px;">
                     <div class="icon-circle" style="color: var(--primary);"><i class="fa-solid fa-martini-glass" style="font-size: 4.5rem;"></i></div>
-                    <h3 style="font-family: 'Inter', sans-serif; font-size: 1.1rem; font-weight: 700; color: #186082; letter-spacing: 1px;">HANGOVER</h3>
+                    <h3 style="font-family: 'Inter', sans-serif; font-size: 1.1rem; font-weight: 700; color: #0B3D2E; letter-spacing: 1px;">HANGOVER</h3>
                 </a>
                 <a href="book.html" class="service-icon" style="text-decoration: none; color: inherit; display: flex; flex-direction: column; align-items: center; gap: 15px;">
                     <div class="icon-circle" style="color: var(--primary);"><i class="fa-solid fa-dumbbell" style="font-size: 4.5rem;"></i></div>
-                    <h3 style="font-family: 'Inter', sans-serif; font-size: 1.1rem; font-weight: 700; color: #186082; letter-spacing: 1px;">RECOVERY</h3>
+                    <h3 style="font-family: 'Inter', sans-serif; font-size: 1.1rem; font-weight: 700; color: #0B3D2E; letter-spacing: 1px;">RECOVERY</h3>
                 </a>
                 <a href="book.html" class="service-icon" style="text-decoration: none; color: inherit; display: flex; flex-direction: column; align-items: center; gap: 15px;">
                     <div class="icon-circle" style="color: var(--primary);"><i class="fa-solid fa-crown" style="font-size: 4.5rem;"></i></div>
-                    <h3 style="font-family: 'Inter', sans-serif; font-size: 1.1rem; font-weight: 700; color: #186082; letter-spacing: 1px;">BEAUTY</h3>
+                    <h3 style="font-family: 'Inter', sans-serif; font-size: 1.1rem; font-weight: 700; color: #0B3D2E; letter-spacing: 1px;">BEAUTY</h3>
                 </a>
             </div>
         </div>
@@ -113,7 +129,7 @@
                     <li style="margin-bottom: 15px; display: flex; align-items: flex-start; gap: 10px;"><i class="fa-regular fa-circle-check" style="color: var(--accent); margin-top: 5px;"></i> B-Complex Vitamins | Vitamin B12 | Vitamin C | Lipostat (MIC) | Magnesium | Glutathione | Biotin | Zinc</li>
                     <li style="margin-bottom: 15px; display: flex; align-items: flex-start; gap: 10px;"><i class="fa-regular fa-circle-check" style="color: var(--accent); margin-top: 5px;"></i> Rejuvenate & Restore</li>
                 </ul>
-                <a href="https://square.link/u/V4TofUel" class="btn-dark" style="display: inline-block; padding: 15px 35px; background: var(--primary); color: white; border-radius: 30px; text-decoration: none; font-weight: 600;">Book with 20% Advance</a>
+                <a href="https://square.link/u/V4TofUel" class="btn-dark" style="display: inline-block; padding: 15px 35px; background: var(--primary); color: white; border-radius: 30px; text-decoration: none; font-weight: 600;">Book Treatment</a>
                 <div class="urgency-badge"><i class="fa-solid fa-fire"></i> High Demand: 45+ sessions booked this week</div>
             </div>
         </div>
@@ -190,7 +206,7 @@
     <!-- Weight Loss Injections Section -->
     <section class="weight-loss-injections section-padding bg-white" data-aos="fade-up">
         <div class="container text-center" style="max-width: 1200px;">
-            <h2 class="section-title diff-title" style="margin-bottom: 10px; font-family: 'Inter', sans-serif; font-size: 2.8rem; color: #186082; font-weight: 700; text-transform: uppercase;">Revive Weight Loss Injections</h2>
+            <h2 class="section-title diff-title" style="margin-bottom: 10px; font-family: 'Inter', sans-serif; font-size: 2.8rem; color: #0B3D2E; font-weight: 700; text-transform: uppercase;">Revive Weight Loss Injections</h2>
             <p class="section-desc">Customized for your body & goals • Dosing increases gradually • Personalized plans • Ongoing support</p>
             <div class="product-container" style="display: flex; justify-content: center; gap: 30px; flex-wrap: wrap; margin-top: 40px; text-align: left;">
                 <!-- Weight Loss Item 1 -->
@@ -203,7 +219,7 @@
                             <p class="price" style="font-size: 1.5rem; margin-bottom: 15px; color: var(--accent); font-weight: 700;"><span style="font-size: 0.9rem; font-weight: normal; color: #64748b;">Starting at</span> $199 <span style="font-size: 0.9rem; font-weight: normal; color: #64748b;">/ month only</span></p>
                             <p style="color: #64748b; font-size: 0.95rem; margin-bottom: 20px; flex-grow: 1;">Effective, customized injection plan to support your sustainable weight loss journey.</p>
                         </div>
-                        <a href="https://square.link/u/XL0onhgR" class="btn-dark" style="text-align: center; display: block; padding: 12px; background: var(--primary); color: white; border-radius: 30px; font-weight: 600; text-decoration: none; margin-top: auto;">Book with 20% Advance</a>
+                        <a href="https://square.link/u/XL0onhgR" class="btn-dark" style="text-align: center; display: block; padding: 12px; background: var(--primary); color: white; border-radius: 30px; font-weight: 600; text-decoration: none; margin-top: auto;">Book Treatment</a>
                     </div>
                 </div>
 
@@ -217,92 +233,63 @@
                             <p class="price" style="font-size: 1.5rem; margin-bottom: 15px; color: var(--accent); font-weight: 700;"><span style="font-size: 0.9rem; font-weight: normal; color: #64748b;">Starting at</span> $249 <span style="font-size: 0.9rem; font-weight: normal; color: #64748b;">/ month only</span></p>
                             <p style="color: #64748b; font-size: 0.95rem; margin-bottom: 20px; flex-grow: 1;">Advanced dual-action weight management protocol optimized for robust results.</p>
                         </div>
-                        <a href="https://square.link/u/A0Op2rDF" class="btn-dark" style="text-align: center; display: block; padding: 12px; background: var(--primary); color: white; border-radius: 30px; font-weight: 600; text-decoration: none; margin-top: auto;">Book with 20% Advance</a>
+                        <a href="https://square.link/u/A0Op2rDF" class="btn-dark" style="text-align: center; display: block; padding: 12px; background: var(--primary); color: white; border-radius: 30px; font-weight: 600; text-decoration: none; margin-top: auto;">Book Treatment</a>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- IM Pricing Section -->
+    <!-- IM Pricing Section (Redesigned Shot Bar) -->
     <section class="im-pricing section-padding bg-white" data-aos="fade-up" style="border-top: 1px solid rgba(0,0,0,0.05);">
         <div class="container text-center" style="max-width: 1200px;">
-            <h2 class="section-title diff-title" style="margin-bottom: 10px; font-family: 'Inter', sans-serif; font-size: 2.8rem; color: #186082; font-weight: 700; text-transform: uppercase;">Shot Bar</h2>
-            <p class="section-desc" style="margin-bottom: 30px;">Add to any IV drip • Quick 5-minute injections • Wellness made easy</p>
+            <h2 class="section-title diff-title" style="margin-bottom: 10px; font-family: 'Inter', sans-serif; font-size: 2.8rem; color: #0B3D2E; font-weight: 700; text-transform: uppercase;">The Shot Bar</h2>
+            <p class="section-desc" style="margin-bottom: 40px;">Rapid wellness boosts delivered in under 15 minutes. Add to any IV or book standalone.</p>
             
-            <div class="carousel-wrapper">
-                <button class="carousel-btn left-btn" aria-label="Previous">&#10094;</button>
-                <button class="carousel-btn right-btn" aria-label="Next">&#10095;</button>
-                <div class="product-carousel" style="justify-content: flex-start; text-align: left;">
+            <div class="shot-bar-grid mt-4">
                 <!-- Item 1 -->
-                <div class="product-card-single" style="box-shadow: 0 10px 30px rgba(0,0,0,0.08); background: #fff; border-radius: 12px; overflow: hidden; display: flex; flex-direction: column;">
-                    <img src="https://res.cloudinary.com/dpcidympa/image/upload/v1776218208/vitamin_b-12_nvw8th.png" alt="Vitamin B12">
-                    <div class="card-content" style="padding: 25px; flex-grow: 1; display: flex; flex-direction: column;">
-                        <div>
-                            <span class="badge" style="background:#fee2e2; color:#b91c1c; padding: 5px 12px; border-radius: 20px; font-size: 0.75rem; font-weight: 700; display: inline-block; margin-bottom: 15px;">IM SHOT</span>
-                            <h3 style="font-size: 1.6rem; color: var(--primary); margin-bottom: 10px;">Vitamin B12</h3>
-                            <p class="price" style="font-size: 1.5rem; margin-bottom: 15px; color: var(--accent); font-weight: 700;">$35</p>
-                            <p style="color: #64748b; font-size: 0.95rem; margin-bottom: 20px; flex-grow: 1;">Boost energy levels and improve metabolic function.</p>
-                        </div>
-                        <a href="https://square.link/u/zLDBSZqG" class="btn-dark" style="text-align: center; display: block; padding: 12px; background: var(--primary); color: white; border-radius: 30px; font-weight: 600; text-decoration: none; margin-top: auto;">Book with 20% Advance</a>
-                    </div>
+                <div class="premium-shot-card">
+                    <img src="https://res.cloudinary.com/dpcidympa/image/upload/v1776218208/vitamin_b-12_nvw8th.png" alt="Vitamin B12" class="shot-product-image">
+                    <h3>Vitamin B12</h3>
+                    <div class="price">$35</div>
+                    <p>Instant energy boost and metabolic support.</p>
+                    <a href="https://square.link/u/zLDBSZqG" class="btn-outline-dark" style="width: 100%; display: block; border-radius: 30px;">Book Shot</a>
                 </div>
 
                 <!-- Item 2 -->
-                <div class="product-card-single" style="box-shadow: 0 10px 30px rgba(0,0,0,0.08); background: #fff; border-radius: 12px; overflow: hidden; display: flex; flex-direction: column;">
-                    <img src="https://res.cloudinary.com/dpcidympa/image/upload/v1776218208/vitamin-d_zsuzaw.png" alt="Vitamin D">
-                    <div class="card-content" style="padding: 25px; flex-grow: 1; display: flex; flex-direction: column;">
-                        <div>
-                            <span class="badge" style="background:#fef08a; color:#a16207; padding: 5px 12px; border-radius: 20px; font-size: 0.75rem; font-weight: 700; display: inline-block; margin-bottom: 15px;">IM SHOT</span>
-                            <h3 style="font-size: 1.6rem; color: var(--primary); margin-bottom: 10px;">Vitamin D</h3>
-                            <p class="price" style="font-size: 1.5rem; margin-bottom: 15px; color: var(--accent); font-weight: 700;">$45</p>
-                            <p style="color: #64748b; font-size: 0.95rem; margin-bottom: 20px; flex-grow: 1;">Strengthen bones, immunity, and overall mood.</p>
-                        </div>
-                        <a href="https://square.link/u/RrPjPYUw" class="btn-dark" style="text-align: center; display: block; padding: 12px; background: var(--primary); color: white; border-radius: 30px; font-weight: 600; text-decoration: none; margin-top: auto;">Book with 20% Advance</a>
-                    </div>
+                <div class="premium-shot-card">
+                    <img src="https://res.cloudinary.com/dpcidympa/image/upload/v1776218208/vitamin-d_zsuzaw.png" alt="Vitamin D" class="shot-product-image">
+                    <h3>Vitamin D</h3>
+                    <div class="price">$45</div>
+                    <p>Bone health, immunity, and mood regulation.</p>
+                    <a href="https://square.link/u/RrPjPYUw" class="btn-outline-dark" style="width: 100%; display: block; border-radius: 30px;">Book Shot</a>
                 </div>
 
                 <!-- Item 3 -->
-                <div class="product-card-single" style="box-shadow: 0 10px 30px rgba(0,0,0,0.08); background: #fff; border-radius: 12px; overflow: hidden; display: flex; flex-direction: column;">
-                    <img src="https://res.cloudinary.com/dpcidympa/image/upload/v1776220403/Lipolean_tvb5va.png" alt="Lipolean">
-                    <div class="card-content" style="padding: 25px; flex-grow: 1; display: flex; flex-direction: column;">
-                        <div>
-                            <span class="badge" style="background:#dbeafe; color:#1d4ed8; padding: 5px 12px; border-radius: 20px; font-size: 0.75rem; font-weight: 700; display: inline-block; margin-bottom: 15px;">IM SHOT</span>
-                            <h3 style="font-size: 1.6rem; color: var(--primary); margin-bottom: 10px;">Lipolean</h3>
-                            <p class="price" style="font-size: 1.5rem; margin-bottom: 15px; color: var(--accent); font-weight: 700;">$40</p>
-                            <p style="color: #64748b; font-size: 0.95rem; margin-bottom: 20px; flex-grow: 1;">Support fat metabolism and enhance weight loss goals.</p>
-                        </div>
-                        <a href="https://square.link/u/CXxvDxs6" class="btn-dark" style="text-align: center; display: block; padding: 12px; background: var(--primary); color: white; border-radius: 30px; font-weight: 600; text-decoration: none; margin-top: auto;">Book with 20% Advance</a>
-                    </div>
+                <div class="premium-shot-card">
+                    <img src="https://res.cloudinary.com/dpcidympa/image/upload/v1776220403/Lipolean_tvb5va.png" alt="Lipolean" class="shot-product-image">
+                    <h3>Lipolean</h3>
+                    <div class="price">$40</div>
+                    <p>Fat metabolism and weight loss optimization.</p>
+                    <a href="https://square.link/u/CXxvDxs6" class="btn-outline-dark" style="width: 100%; display: block; border-radius: 30px;">Book Shot</a>
                 </div>
 
                 <!-- Item 4 -->
-                <div class="product-card-single" style="box-shadow: 0 10px 30px rgba(0,0,0,0.08); background: #fff; border-radius: 12px; overflow: hidden; display: flex; flex-direction: column;">
-                    <img src="https://res.cloudinary.com/dpcidympa/image/upload/v1776546088/biotin_vzauor-removebg-preview_ondabm.png" alt="Biotin">
-                    <div class="card-content" style="padding: 25px; flex-grow: 1; display: flex; flex-direction: column;">
-                        <div>
-                            <span class="badge" style="background:#dcfce7; color:#15803d; padding: 5px 12px; border-radius: 20px; font-size: 0.75rem; font-weight: 700; display: inline-block; margin-bottom: 15px;">IM SHOT</span>
-                            <h3 style="font-size: 1.6rem; color: var(--primary); margin-bottom: 10px;">Biotin</h3>
-                            <p class="price" style="font-size: 1.5rem; margin-bottom: 15px; color: var(--accent); font-weight: 700;">$35</p>
-                            <p style="color: #64748b; font-size: 0.95rem; margin-bottom: 20px; flex-grow: 1;">Promote healthy hair, glowing skin, and strong nails.</p>
-                        </div>
-                        <a href="https://square.link/u/ChuGL199" class="btn-dark" style="text-align: center; display: block; padding: 12px; background: var(--primary); color: white; border-radius: 30px; font-weight: 600; text-decoration: none; margin-top: auto;">Book with 20% Advance</a>
-                    </div>
+                <div class="premium-shot-card">
+                    <img src="https://res.cloudinary.com/dpcidympa/image/upload/v1776546088/biotin_vzauor-removebg-preview_ondabm.png" alt="Biotin" class="shot-product-image">
+                    <h3>Biotin</h3>
+                    <div class="price">$35</div>
+                    <p>Healthy hair, glowing skin, and strong nails.</p>
+                    <a href="https://square.link/u/ChuGL199" class="btn-outline-dark" style="width: 100%; display: block; border-radius: 30px;">Book Shot</a>
                 </div>
 
                 <!-- Item 5 -->
-                <div class="product-card-single" style="box-shadow: 0 10px 30px rgba(0,0,0,0.08); background: #fff; border-radius: 12px; overflow: hidden; display: flex; flex-direction: column;">
-                    <img src="https://res.cloudinary.com/dpcidympa/image/upload/v1776547649/gggggg_mjpxco.jpg" alt="Glutathione">
-                    <div class="card-content" style="padding: 25px; flex-grow: 1; display: flex; flex-direction: column;">
-                        <div>
-                            <span class="badge" style="background:#fbcfe8; color:#be185d; padding: 5px 12px; border-radius: 20px; font-size: 0.75rem; font-weight: 700; display: inline-block; margin-bottom: 15px;">IM SHOT</span>
-                            <h3 style="font-size: 1.6rem; color: var(--primary); margin-bottom: 10px;">Glutathione</h3>
-                            <p class="price" style="font-size: 1.5rem; margin-bottom: 15px; color: var(--accent); font-weight: 700;">$50</p>
-                            <p style="color: #64748b; font-size: 0.95rem; margin-bottom: 20px; flex-grow: 1;">A powerful antioxidant for immune support and detox.</p>
-                        </div>
-                        <a href="https://square.link/u/sunXzfKj" class="btn-dark" style="text-align: center; display: block; padding: 12px; background: var(--primary); color: white; border-radius: 30px; font-weight: 600; text-decoration: none; margin-top: auto;">Book with 20% Advance</a>
-                    </div>
-                </div>
+                <div class="premium-shot-card">
+                    <img src="https://res.cloudinary.com/dpcidympa/image/upload/v1776547649/gggggg_mjpxco.jpg" alt="Glutathione" class="shot-product-image">
+                    <h3>Glutathione</h3>
+                    <div class="price">$50</div>
+                    <p>Powerful antioxidant for detoxification and skin health.</p>
+                    <a href="https://square.link/u/sunXzfKj" class="btn-outline-dark" style="width: 100%; display: block; border-radius: 30px;">Book Shot</a>
                 </div>
             </div>
         </div>
@@ -315,10 +302,10 @@
             <p class="section-desc" style="max-width: 600px;">Your instagram feed just got healthier—follow us for daily inspiration, fun and a community that loves to feel good.</p>
             
             <div class="insta-image mt-4" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 10px; max-width: 800px; margin: 0 auto;">
-                <img src="https://images.unsplash.com/photo-1505944270255-72b8c68c6a70?w=400&q=80" alt="IV setup" style="border-radius: 8px; width: 100%; aspect-ratio: 1/1; object-fit: cover; box-shadow: none;">
-                <img src="https://images.unsplash.com/photo-1579684385127-1ef15d508118?w=400&q=80" alt="Nurse preparing IV" style="border-radius: 8px; width: 100%; aspect-ratio: 1/1; object-fit: cover; box-shadow: none;">
-                <img src="https://images.unsplash.com/photo-1550831107-1553da8c8464?w=400&q=80" alt="Wellness" style="border-radius: 8px; width: 100%; aspect-ratio: 1/1; object-fit: cover; box-shadow: none;">
-                <img src="https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=400&q=80" alt="Vitamin infusion" style="border-radius: 8px; width: 100%; aspect-ratio: 1/1; object-fit: cover; box-shadow: none;">
+                <img src="assets/images/insta-1.png" alt="Luxury IV Hydration Lounge in New York" style="border-radius: 8px; width: 100%; aspect-ratio: 1/1; object-fit: cover; box-shadow: none;">
+                <img src="assets/images/insta-2.png" alt="Professional Nurse Administering IV Therapy" style="border-radius: 8px; width: 100%; aspect-ratio: 1/1; object-fit: cover; box-shadow: none;">
+                <img src="assets/images/insta-3.png" alt="At-Home IV Therapy Experience NY" style="border-radius: 8px; width: 100%; aspect-ratio: 1/1; object-fit: cover; box-shadow: none;">
+                <img src="assets/images/insta-4.png" alt="Premium Wellness & Vitamin IV Setup" style="border-radius: 8px; width: 100%; aspect-ratio: 1/1; object-fit: cover; box-shadow: none;">
             </div>
             
             <div style="margin-top: 40px;">
@@ -361,7 +348,7 @@
         </div>
     </div>
 
-    <!-- Why IV Hydration — Redesigned -->
+    <!-- Why IV Hydration &mdash; Redesigned -->
     <section class="why-iv-redesign section-padding" data-aos="fade-up">
         <div class="wiv-bg-decoration wiv-circle-1"></div>
         <div class="wiv-bg-decoration wiv-circle-2"></div>
@@ -372,7 +359,7 @@
             <div class="wiv-header">
                 <span class="wiv-pill">THE SCIENCE BEHIND IT</span>
                 <h2 class="wiv-title">Why IV Hydration?</h2>
-                <p class="wiv-subtitle">Skip the digestive system. Go straight to the source — 100% of every nutrient, delivered directly to your cells.</p>
+                <p class="wiv-subtitle">Skip the digestive system. Go straight to the source &mdash; 100% of every nutrient, delivered directly to your cells.</p>
             </div>
 
             <!-- Two-Column Layout -->
@@ -454,7 +441,7 @@
     <!-- FAQS Section -->
     <section id="faqs" class="faqs-section section-padding bg-white">
         <div class="container text-center" style="max-width: 900px; margin: 0 auto;">
-            <h2 class="section-title diff-title" style="margin-bottom: 20px; font-family: 'Inter', sans-serif; font-size: 2.8rem; color: #186082; font-weight: 700; text-transform: uppercase;">FREQUENTLY ASKED QUESTIONS</h2>
+            <h2 class="section-title diff-title" style="margin-bottom: 20px; font-family: 'Inter', sans-serif; font-size: 2.8rem; color: #0B3D2E; font-weight: 700; text-transform: uppercase;">FREQUENTLY ASKED QUESTIONS</h2>
             <p class="section-desc">Got questions about IV hydration? We've got answers. If you can't find what you're looking for, feel free to contact us directly.</p>
             
             <div class="accordion" style="text-align: left; margin-top: 40px;">
@@ -569,13 +556,36 @@
     </section>
 
 
-        <!-- Footer -->
+    <!-- Service Area Section -->
+    <section class="service-area section-padding bg-light" data-aos="fade-up">
+        <div class="container">
+            <div style="display: flex; flex-wrap: wrap; align-items: center; gap: 50px;">
+                <div style="flex: 1; min-width: 300px;">
+                    <h2 class="section-title text-left" style="font-size: 2.5rem; margin-bottom: 20px;">We Come to <strong style="color: var(--primary);">You</strong></h2>
+                    <p class="section-desc text-left" style="margin-bottom: 30px;">Revive IV brings premium wellness directly to your doorstep. Whether you're at home, in the office, or at a hotel, our licensed nurses provide expert care wherever you are in the New York Metro Area.</p>
+                    
+                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 15px; margin-bottom: 30px;">
+                        <div style="display: flex; align-items: center; gap: 10px; font-weight: 600; color: #0B3D2E;"><i class="fa-solid fa-location-dot"></i> Manhattan</div>
+                        <div style="display: flex; align-items: center; gap: 10px; font-weight: 600; color: #0B3D2E;"><i class="fa-solid fa-location-dot"></i> Brooklyn</div>
+                        <div style="display: flex; align-items: center; gap: 10px; font-weight: 600; color: #0B3D2E;"><i class="fa-solid fa-location-dot"></i> Queens</div>
+                        <div style="display: flex; align-items: center; gap: 10px; font-weight: 600; color: #0B3D2E;"><i class="fa-solid fa-location-dot"></i> Long Island</div>
+                    </div>
+                    
+                    <a href="contact.html" class="btn-dark">VIEW FULL SERVICE AREA</a>
+                </div>
+                <div style="flex: 1.2; min-width: 400px; border-radius: 20px; overflow: hidden; box-shadow: 0 20px 50px rgba(0,0,0,0.1);">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d387191.33750346623!2d-73.97968099999999!3d40.6974881!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew%20York%2C%20NY%2C%20USA!5e0!3m2!1sen!2s!4v1689260783422!5m2!1sen!2s" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+                <!-- Footer -->
     <footer class="footer new-footer">
         <div class="footer-container">
             <div class="footer-links">
                 <ul>
                     <li><a href="index.html">HOME</a><i class="fa-solid fa-chevron-right"></i></li>
-                    <li><a href="services.html">SERVICES</a><i class="fa-solid fa-chevron-right"></i></li>
                     <li><a href="iv-drips.html">IV DRIPS</a><i class="fa-solid fa-chevron-right"></i></li>
 
                     <li><a href="about.html">ABOUT</a><i class="fa-solid fa-chevron-right"></i></li>
@@ -594,10 +604,8 @@
                     <a href="https://www.tiktok.com/@revive.iv.drip?_r=1&_t=ZS-95Y6xC3RF0z" target="_blank"><i class="fa-brands fa-tiktok"></i></a>
                 </div>
                 <div class="contact-info">
-                    <p class="call-text">Service Area</p>
-                    <p class="call-number" style="font-size: 0.95rem; margin-bottom: 20px;">New York Metro Area</p>
                     <p class="call-text">Give us a call</p>
-                    <p class="call-number">+1 813-709-3698</p>
+                    <p class="call-number">+1 (646) 709-3698</p>
                 </div>
             </div>
         </div>

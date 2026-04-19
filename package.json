@@ -1,0 +1,13 @@
+{
+  "name": "revive-iv",
+  "version": "1.0.0",
+  "description": "Static website for Revive IV Hydration",
+  "main": "index.html",
+  "scripts": {
+    "start": "npx http-server -p 8080",
+    "dev": "npx http-server -p 8080 -c-1"
+  },
+  "dependencies": {
+    "http-server": "^14.1.1"
+  }
+}

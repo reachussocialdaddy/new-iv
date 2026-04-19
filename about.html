@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Us | Revive IV Hydration</title>
+    <title>About Us | Professional IV Therapy in New York | Revive IV</title>
+    <meta name="description" content="Meet the team behind Revive IV Hydration. We are dedicated to providing premium mobile wellness and IV therapy services across the New York Metro Area.">
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,12 +15,26 @@
 </head>
 <body>
     <!-- Top Bar -->
-    <div class="top-bar" style="display: flex; justify-content: center; align-items: center; gap: 15px;">
-        <span style="font-size: 0.9rem;">Expert IV Hydration Delivered to You in New York & Surrounding Areas</span>
-        <a href="book.html" style="background-color: white; color: var(--accent); padding: 4px 15px; border-radius: 20px; font-weight: 700; font-size: 0.75rem;">BOOK NOW</a>
+    <div class="top-bar-wrapper" id="topBar">
+        <div class="top-bar" style="display: flex; justify-content: center; align-items: center; gap: 15px; position: relative; padding-right: 40px;">
+            <span style="font-size: 0.9rem;">Expert IV Hydration Delivered to You in New York & Surrounding Areas</span>
+            <a href="book.html" style="background-color: white; color: var(--accent); padding: 4px 15px; border-radius: 20px; font-weight: 700; font-size: 0.75rem;">BOOK NOW</a>
+            <button onclick="dismissTopBar()" style="position: absolute; right: 15px; background: none; border: none; color: white; cursor: pointer; font-size: 1.2rem; opacity: 0.8;">&times;</button>
+        </div>
     </div>
+    <script>
+        function dismissTopBar() {
+            document.getElementById('topBar').style.display = 'none';
+            localStorage.setItem('topBarDismissed', 'true');
+        }
+        if (localStorage.getItem('topBarDismissed')) {
+            document.getElementById('topBar').style.display = 'none';
+        }
+    </script>
 
     <!-- Header / Navbar -->
+    
+    <!-- Header -->
     <header class="navbar">
         <div class="logo">
             <a href="index.html"><img src="assets/images/revive-iv-logo.png" alt="Revive IV Logo" class="logo-img"></a>
@@ -28,13 +43,14 @@
             <i class="fa-solid fa-bars"></i>
         </div>
         <nav class="nav-links">
-            <a href="index.html">HOME</a>
-            <a href="services.html">SERVICES</a>
-            <a href="iv-drips.html">IV DRIPS</a>
+            <a href="index.html" class="">HOME</a>
+            <a href="services.html" class="">SERVICES</a>
+            <a href="iv-drips.html" class="">IV DRIPS</a>
+            <a href="pricing.html" class="">PRICING</a>
             <a href="about.html" class="active">ABOUT</a>
-            <a href="index.html#faqs">FAQS</a>
+            <a href="faq.html" class="">FAQS</a>
             <a href="index.html#reviews">REVIEWS</a>
-            <a href="contact.html">CONTACT</a>
+            <a href="contact.html" class="">CONTACT</a>
         </nav>
     </header>
 
@@ -54,7 +70,7 @@
     <!-- Treatment Goals Section -->
     <section class="treatment-goals section-padding bg-white">
         <div class="container text-center" style="max-width: 1200px;">
-            <h2 class="section-title diff-title" style="margin-bottom: 15px; font-family: 'Inter', sans-serif; font-size: 2.1rem; color: #186082; font-weight: 600;">Find the Right Treatment for Your Wellness Goals</h2>
+            <h2 class="section-title diff-title" style="margin-bottom: 15px; font-family: 'Inter', sans-serif; font-size: 2.1rem; color: #0B3D2E; font-weight: 600;">Find the Right Treatment for Your Wellness Goals</h2>
             <p class="section-desc" style="max-width: 850px; margin: 0 auto; margin-bottom: 45px; font-family: 'Inter', sans-serif; color: #64748b; font-size: 0.95rem; line-height: 1.6;">Our physician-developed treatments are designed to target specific health concerns, promote overall wellness, and support long-term health—helping you look, feel, and perform at your best.</p>
             
             <div class="goals-grid">
@@ -141,13 +157,12 @@
         </div>
     </section>
     
-        <!-- Footer -->
+                    <!-- Footer -->
     <footer class="footer new-footer">
         <div class="footer-container">
             <div class="footer-links">
                 <ul>
                     <li><a href="index.html">HOME</a><i class="fa-solid fa-chevron-right"></i></li>
-                    <li><a href="services.html">SERVICES</a><i class="fa-solid fa-chevron-right"></i></li>
                     <li><a href="iv-drips.html">IV DRIPS</a><i class="fa-solid fa-chevron-right"></i></li>
 
                     <li><a href="about.html">ABOUT</a><i class="fa-solid fa-chevron-right"></i></li>
@@ -166,10 +181,8 @@
                     <a href="https://www.tiktok.com/@revive.iv.drip?_r=1&_t=ZS-95Y6xC3RF0z" target="_blank"><i class="fa-brands fa-tiktok"></i></a>
                 </div>
                 <div class="contact-info">
-                    <p class="call-text">Service Area</p>
-                    <p class="call-number" style="font-size: 0.95rem; margin-bottom: 20px;">New York Metro Area</p>
                     <p class="call-text">Give us a call</p>
-                    <p class="call-number">+1 813-709-3698</p>
+                    <p class="call-number">+1 (646) 709-3698</p>
                 </div>
             </div>
         </div>

@@ -1,0 +1,14 @@
+# Dependencies
+node_modules/
+.npm/
+
+# OS specific files
+.DS_Store
+Thumbs.db
+
+# Gemini/Antigravity artifacts
+.gemini/
+.antigravity/
+
+# Maintenance scripts (optional, but excluding scratch for a clean production repo)
+# scratch/
