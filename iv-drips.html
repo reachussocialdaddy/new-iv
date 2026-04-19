@@ -10,7 +10,20 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,400;0,600;0,700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
     <!-- FontAwesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles.css?v=2">
+    <style>
+        /* CRO Styling overrides to bypass cache */
+        .urgency-badge { font-size: 0.8rem; color: #b91c1c; display: flex; align-items: center; gap: 5px; margin-top: 8px; font-weight: 600; justify-content: center; background: #fee2e2; padding: 5px 10px; border-radius: 6px; }
+        .trust-badges-container { display: flex; gap: 30px; justify-content: center; align-items: center; flex-wrap: wrap; margin-top: 40px; padding: 25px; background: #f8fafc; border-radius: 12px; border: 1px dashed #cbd5e1; }
+        .trust-badge-item { display: flex; flex-direction: column; align-items: center; gap: 8px; color: var(--primary); text-align: center; font-size: 0.9rem; font-weight: 600; }
+        .trust-badge-item i { font-size: 1.8rem; color: var(--accent); }
+        .guide-container { background: var(--bg-light); border-radius: 16px; border-left: 4px solid var(--accent); padding: 30px; margin-bottom: 40px; }
+        .guide-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; text-align: left; margin-top: 20px; }
+        .guide-item { display: flex; align-items: center; gap: 15px; background: white; padding: 15px; border-radius: 10px; box-shadow: 0 4px 6px rgba(0,0,0,0.02); }
+        .guide-item .trigger { font-weight: 600; color: var(--text-dark); }
+        .guide-item .solution { color: var(--primary); font-weight: 700; }
+        .faq-teaser { background: var(--primary); color: white; border-radius: 16px; padding: 40px; text-align: center; margin-top: 60px; margin-bottom: 20px; line-height: 1.6; border: 2px solid rgba(255,255,255,0.1); }
+    </style>
 </head>
 <body>
     <!-- Top Bar -->

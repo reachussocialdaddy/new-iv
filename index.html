@@ -12,7 +12,19 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <!-- AOS CSS -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles.css?v=2">
+    <style>
+        /* CRO Styling overrides to bypass cache */
+        .urgency-badge { font-size: 0.8rem; color: #b91c1c; display: flex; align-items: center; gap: 5px; margin-top: 8px; font-weight: 600; justify-content: center; background: #fee2e2; padding: 5px 10px; border-radius: 6px; }
+        .trust-badges-container { display: flex; gap: 30px; justify-content: center; align-items: center; flex-wrap: wrap; margin-top: 40px; padding: 25px; background: #f8fafc; border-radius: 12px; border: 1px dashed #cbd5e1; }
+        .trust-badge-item { display: flex; flex-direction: column; align-items: center; gap: 8px; color: var(--primary); text-align: center; font-size: 0.9rem; font-weight: 600; }
+        .trust-badge-item i { font-size: 1.8rem; color: var(--accent); }
+        .guide-container { background: var(--bg-light); border-radius: 16px; border-left: 4px solid var(--accent); padding: 30px; margin-bottom: 40px; }
+        .guide-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; text-align: left; margin-top: 20px; }
+        .guide-item { display: flex; align-items: center; gap: 15px; background: white; padding: 15px; border-radius: 10px; box-shadow: 0 4px 6px rgba(0,0,0,0.02); }
+        .guide-item .trigger { font-weight: 600; color: var(--text-dark); }
+        .guide-item .solution { color: var(--primary); font-weight: 700; }
+    </style>
 </head>
 <body>
 
@@ -113,9 +125,28 @@
                     <li style="margin-bottom: 15px; display: flex; align-items: flex-start; gap: 10px;"><i class="fa-regular fa-circle-check" style="color: var(--accent); margin-top: 5px;"></i> Rejuvenate & Restore</li>
                 </ul>
                 <a href="https://square.link/u/V4TofUel" class="btn-dark" style="display: inline-block; padding: 15px 35px; background: var(--primary); color: white; border-radius: 30px; text-decoration: none; font-weight: 600;">Book with 20% Advance</a>
+                <div class="urgency-badge"><i class="fa-solid fa-fire"></i> High Demand: 45+ sessions booked this week</div>
             </div>
         </div>
     </section>
+
+    <!-- Trust Badges -->
+    <div class="container" style="max-width: 900px;">
+        <div class="trust-badges-container">
+            <div class="trust-badge-item">
+                <i class="fa-solid fa-user-nurse"></i>
+                Administered by<br>Licensed RNs
+            </div>
+            <div class="trust-badge-item">
+                <i class="fa-solid fa-prescription-bottle-medical"></i>
+                FDA-Approved<br>Pharmacy Sourced
+            </div>
+            <div class="trust-badge-item">
+                <i class="fa-solid fa-stethoscope"></i>
+                Medical Director<br>Oversight
+            </div>
+        </div>
+    </div>
 
     <!-- Seamless Wellness Section (How it works) -->
     <section class="seamless-wellness section-padding" data-aos="fade-up">
@@ -297,6 +328,28 @@
 
 
 
+    <!-- Quick Guide -->
+    <div class="container" style="max-width: 900px; margin-top: 50px;">
+        <div class="guide-container">
+            <h2 style="font-size: 1.5rem; color: var(--primary); margin-bottom: 10px;">Which Drip Is Right For Me?</h2>
+            <p style="color: #64748b; font-size: 0.95rem;">Not sure what to choose? Here is a quick cheat-sheet for your goals.</p>
+            <div class="guide-grid">
+                <div class="guide-item">
+                    <span class="trigger">Need energy & focus?</span> 👉 <span class="solution">Myers Cocktail</span>
+                </div>
+                <div class="guide-item">
+                    <span class="trigger">Drank too much?</span> 👉 <span class="solution">Liquid Gold</span>
+                </div>
+                <div class="guide-item">
+                    <span class="trigger">Upcoming event/wedding?</span> 👉 <span class="solution">Beautify</span>
+                </div>
+                <div class="guide-item">
+                    <span class="trigger">Feeling sick?</span> 👉 <span class="solution">Revive Defense</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <!-- Why IV Hydration -->
     <section class="why-iv section-padding bg-white">
         <h2 class="section-title">WHY IV<br>HYDRATION?</h2>
@@ -319,6 +372,7 @@
                 <div class="bag-pricing">
                     <h4 class="bag-name">MYERS COCKTAIL</h4>
                     <span class="bag-price">$399</span>
+                    <div class="urgency-badge" style="margin-top:0px;"><i class="fa-solid fa-fire"></i> Popular Choice</div>
                 </div>
             </div>
             <div class="iv-bag-item">
