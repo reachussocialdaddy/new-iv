@@ -2143,3 +2143,251 @@ a {
         right: -5px;
     }
 }
+
+/* ============================================
+   WHY IV HYDRATION — REDESIGNED SECTION
+   ============================================ */
+
+.why-iv-redesign {
+    background: linear-gradient(135deg, #0a1a24 0%, #0f2d3e 50%, #186082 100%);
+    position: relative;
+    overflow: hidden;
+}
+
+.wiv-bg-decoration {
+    position: absolute;
+    border-radius: 50%;
+    pointer-events: none;
+}
+.wiv-circle-1 {
+    width: 450px;
+    height: 450px;
+    background: rgba(20, 184, 166, 0.07);
+    top: -120px;
+    right: -100px;
+}
+.wiv-circle-2 {
+    width: 280px;
+    height: 280px;
+    background: rgba(255, 255, 255, 0.04);
+    bottom: -80px;
+    left: -60px;
+}
+
+.wiv-inner {
+    max-width: 1200px;
+    position: relative;
+    z-index: 1;
+}
+
+.wiv-header {
+    text-align: center;
+    margin-bottom: 60px;
+}
+.wiv-pill {
+    display: inline-block;
+    background: rgba(20, 184, 166, 0.18);
+    color: #5eead4;
+    border: 1px solid rgba(20, 184, 166, 0.35);
+    padding: 6px 20px;
+    border-radius: 30px;
+    font-size: 0.78rem;
+    font-weight: 700;
+    letter-spacing: 2.5px;
+    margin-bottom: 18px;
+}
+.wiv-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 3rem;
+    color: #ffffff;
+    margin-bottom: 16px;
+    font-weight: 700;
+}
+.wiv-subtitle {
+    color: rgba(255, 255, 255, 0.65);
+    font-size: 1.1rem;
+    max-width: 580px;
+    margin: 0 auto;
+    line-height: 1.7;
+}
+
+.wiv-grid {
+    display: flex;
+    gap: 60px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.wiv-image-col {
+    flex: 1;
+    min-width: 300px;
+}
+.wiv-img-wrapper {
+    position: relative;
+    border-radius: 20px;
+    overflow: visible;
+}
+.wiv-photo {
+    width: 100%;
+    border-radius: 20px;
+    box-shadow: 0 30px 70px rgba(0, 0, 0, 0.5);
+    display: block;
+    object-fit: cover;
+    max-height: 520px;
+}
+.wiv-img-badge {
+    position: absolute;
+    bottom: -18px;
+    right: -18px;
+    background: #ffffff;
+    color: #0f2d3e;
+    padding: 14px 20px;
+    border-radius: 14px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.25);
+    font-weight: 700;
+    font-size: 0.9rem;
+    z-index: 2;
+}
+.wiv-img-badge i {
+    color: #009394;
+    font-size: 1.3rem;
+}
+
+.wiv-content-col {
+    flex: 1;
+    min-width: 300px;
+    padding-bottom: 20px;
+}
+
+.wiv-stats {
+    display: flex;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.06);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 16px;
+    padding: 24px 20px;
+    margin-bottom: 40px;
+    backdrop-filter: blur(8px);
+}
+.wiv-stat {
+    flex: 1;
+    text-align: center;
+}
+.wiv-stat-number {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.4rem;
+    font-weight: 800;
+    color: #5eead4;
+    line-height: 1.1;
+    margin-bottom: 5px;
+}
+.wiv-stat-label {
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 0.8rem;
+    letter-spacing: 0.5px;
+    font-weight: 500;
+}
+.wiv-stat-divider {
+    width: 1px;
+    height: 50px;
+    background: rgba(255, 255, 255, 0.15);
+    margin: 0 10px;
+    flex-shrink: 0;
+}
+
+.wiv-benefits {
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+    margin-bottom: 36px;
+}
+.wiv-benefit-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+}
+.wiv-benefit-icon {
+    width: 44px;
+    height: 44px;
+    border-radius: 12px;
+    background: rgba(20, 184, 166, 0.15);
+    border: 1px solid rgba(20, 184, 166, 0.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    color: #5eead4;
+    font-size: 1.1rem;
+    transition: background 0.3s;
+}
+.wiv-benefit-item:hover .wiv-benefit-icon {
+    background: rgba(20, 184, 166, 0.3);
+}
+.wiv-benefit-item h4 {
+    font-family: 'Inter', sans-serif;
+    font-size: 0.98rem;
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: 4px;
+}
+.wiv-benefit-item p {
+    font-size: 0.88rem;
+    color: rgba(255, 255, 255, 0.58);
+    line-height: 1.6;
+    margin: 0;
+}
+
+.wiv-cta {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    background: #009394;
+    color: #ffffff;
+    padding: 15px 34px;
+    border-radius: 40px;
+    font-weight: 700;
+    font-size: 0.9rem;
+    letter-spacing: 1.5px;
+    text-decoration: none;
+    transition: background 0.3s, transform 0.3s, box-shadow 0.3s;
+    box-shadow: 0 8px 25px rgba(0, 147, 148, 0.35);
+}
+.wiv-cta:hover {
+    background: #007778;
+    transform: translateY(-3px);
+    box-shadow: 0 14px 35px rgba(0, 147, 148, 0.45);
+    color: #fff;
+}
+
+@media (max-width: 900px) {
+    .wiv-grid {
+        flex-direction: column;
+        gap: 40px;
+    }
+    .wiv-img-badge {
+        bottom: -12px;
+        right: -8px;
+    }
+    .wiv-title {
+        font-size: 2.2rem;
+    }
+    .wiv-stat-number {
+        font-size: 1.9rem;
+    }
+}
+@media (max-width: 480px) {
+    .wiv-stats {
+        flex-wrap: wrap;
+        gap: 16px;
+    }
+    .wiv-stat-divider {
+        display: none;
+    }
+    .wiv-stat {
+        min-width: 40%;
+    }
+}
+
